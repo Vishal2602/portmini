@@ -146,6 +146,108 @@ export default function Portfolio() {
 
         {/* Main Content - Scrollable */}
         <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16 scrollable-main relative animate-slide-in-right">
+          {/* Background Decorative Symbols */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            {/* Pink Star */}
+            <div className="absolute top-8 right-16 w-16 h-16 opacity-20">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <defs>
+                  <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#ff6b9d" />
+                    <stop offset="100%" stopColor="#c44569" />
+                  </linearGradient>
+                </defs>
+                <path d="M50 10 L60 35 L85 40 L65 60 L70 85 L50 70 L30 85 L35 60 L15 40 L40 35 Z" fill="url(#pinkGrad)" />
+              </svg>
+            </div>
+
+            {/* Orange Triangle */}
+            <div className="absolute top-12 right-64 w-12 h-12 opacity-25">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <defs>
+                  <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#ff9a56" />
+                    <stop offset="100%" stopColor="#ff6b35" />
+                  </linearGradient>
+                </defs>
+                <polygon points="50,10 90,80 10,80" fill="url(#orangeGrad)" />
+              </svg>
+            </div>
+
+            {/* Green Clover */}
+            <div className="absolute top-6 right-96 w-14 h-14 opacity-20">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <defs>
+                  <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#2ecc71" />
+                    <stop offset="50%" stopColor="#27ae60" />
+                    <stop offset="100%" stopColor="#16a085" />
+                  </linearGradient>
+                </defs>
+                <circle cx="35" cy="35" r="20" fill="url(#greenGrad)" opacity="0.8" />
+                <circle cx="65" cy="35" r="20" fill="url(#greenGrad)" opacity="0.8" />
+                <circle cx="35" cy="65" r="20" fill="url(#greenGrad)" opacity="0.8" />
+                <circle cx="65" cy="65" r="20" fill="url(#greenGrad)" opacity="0.8" />
+              </svg>
+            </div>
+
+            {/* Orange Blob */}
+            <div className="absolute top-4 right-40 w-20 h-12 opacity-25">
+              <svg viewBox="0 0 100 60" className="w-full h-full">
+                <defs>
+                  <linearGradient id="orangeBlobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#ff7675" />
+                    <stop offset="50%" stopColor="#fd79a8" />
+                    <stop offset="100%" stopColor="#e84393" />
+                  </linearGradient>
+                </defs>
+                <ellipse cx="50" cy="30" rx="45" ry="25" fill="url(#orangeBlobGrad)" />
+              </svg>
+            </div>
+
+            {/* Blue Butterfly */}
+            <div className="absolute top-2 right-8 w-18 h-12 opacity-20">
+              <svg viewBox="0 0 120 80" className="w-full h-full">
+                <defs>
+                  <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#74b9ff" />
+                    <stop offset="50%" stopColor="#0984e3" />
+                    <stop offset="100%" stopColor="#6c5ce7" />
+                  </linearGradient>
+                </defs>
+                <ellipse cx="30" cy="25" rx="25" ry="20" fill="url(#blueGrad)" transform="rotate(-20 30 25)" />
+                <ellipse cx="90" cy="25" rx="25" ry="20" fill="url(#blueGrad)" transform="rotate(20 90 25)" />
+                <ellipse cx="30" cy="55" rx="20" ry="15" fill="url(#blueGrad)" transform="rotate(20 30 55)" />
+                <ellipse cx="90" cy="55" rx="20" ry="15" fill="url(#blueGrad)" transform="rotate(-20 90 55)" />
+              </svg>
+            </div>
+
+            {/* Additional scattered symbols for depth */}
+            <div className="absolute top-48 right-20 w-10 h-10 opacity-15">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <defs>
+                  <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#a29bfe" />
+                    <stop offset="100%" stopColor="#6c5ce7" />
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="40" fill="url(#purpleGrad)" />
+              </svg>
+            </div>
+
+            <div className="absolute top-80 right-72 w-8 h-8 opacity-20">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <polygon points="50,15 85,85 15,85" fill="url(#orangeGrad)" />
+              </svg>
+            </div>
+
+            <div className="absolute top-96 right-12 w-12 h-12 opacity-15">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <path d="M50 10 L60 35 L85 40 L65 60 L70 85 L50 70 L30 85 L35 60 L15 40 L40 35 Z" fill="url(#pinkGrad)" />
+              </svg>
+            </div>
+          </div>
+
           {/* Scroll Progress Indicator */}
           <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
             <div 
