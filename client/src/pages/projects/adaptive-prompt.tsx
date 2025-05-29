@@ -65,9 +65,9 @@ export default function AdaptivePromptProject() {
         </nav>
       </header>
 
-      <div className="flex h-[calc(100vh-120px)]">
-        {/* Left Sidebar - Fixed */}
-        <aside className="w-full lg:w-1/3 xl:w-1/4 px-6 lg:px-8 flex-shrink-0 animate-slide-in-left">
+      <div className="flex flex-col md:flex-row h-auto md:h-[calc(100vh-120px)]">
+        {/* Left Sidebar - Full width on mobile, sidebar on desktop */}
+        <aside className="w-full md:w-1/3 lg:w-1/3 xl:w-1/4 px-4 md:px-6 lg:px-8 flex-shrink-0 animate-slide-in-left">
           <section id="about" className="border-t portfolio-border pt-8">
             <p className="text-base max-w-md leading-relaxed mb-8 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
               AI Engineer and UX Designer with 3+ years developing production-scale LLM applications and human-centered design systems. Delivered 25% user engagement increases across 100+ healthcare platforms through optimized RAG architectures and data-driven design methodologies.
@@ -120,7 +120,7 @@ export default function AdaptivePromptProject() {
         </aside>
 
         {/* Main Content - Scrollable */}
-        <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16 scrollable-main relative animate-slide-in-right">
+        <main className="flex-1 overflow-y-auto px-4 md:px-6 lg:px-8 lg:pl-16 scrollable-main relative animate-slide-in-right">
           {/* Scroll Progress Indicator */}
           <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
             <div 
