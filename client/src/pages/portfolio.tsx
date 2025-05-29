@@ -76,96 +76,24 @@ export default function Portfolio() {
   return (
     <div className={`min-h-screen bg-black text-white transition-all duration-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
       {/* Header */}
-      <header className="relative pt-8 pb-16 px-6 lg:px-8 animate-slide-down">
-        {/* Top Navigation Bar */}
-        <div className="flex justify-between items-center mb-8">
-          <div>
-            <h1 className="text-2xl lg:text-3xl font-normal mb-1 tracking-tight">
-              Vishal Sunil Kumar
-            </h1>
-            <p className="text-lg portfolio-text-muted font-light">AI Engineer & UX Designer</p>
-          </div>
-          <nav>
-            <a 
-              href="#about" 
-              className="text-white portfolio-hover text-sm lg:text-base font-medium"
-            >
-              About
-            </a>
-          </nav>
+      <header className="flex justify-between items-start p-6 lg:p-8 animate-slide-down">
+        <div>
+          <h1 className="text-2xl lg:text-3xl font-normal mb-1">
+            Vishal Sunil Kumar
+          </h1>
+          <p className="text-lg portfolio-text-muted">AI Engineer & UX Designer</p>
         </div>
-
-        {/* Decorative Gradient Symbols - Perfectly Centered */}
-        <div className="flex justify-center items-center space-x-6 lg:space-x-10 pointer-events-none">
-          {/* Star Shape */}
-          <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-85" style={{ animationDelay: '0.5s' }} viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ff6b9d" />
-                <stop offset="50%" stopColor="#ffd93d" />
-                <stop offset="100%" stopColor="#6bcf7f" />
-              </linearGradient>
-            </defs>
-            <path d="M50 10 L60 40 L90 40 L68 58 L78 88 L50 70 L22 88 L32 58 L10 40 L40 40 Z" fill="url(#starGradient)" />
-          </svg>
-
-          {/* Triangle Shape */}
-          <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-85" style={{ animationDelay: '1s' }} viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ff6b9d" />
-                <stop offset="50%" stopColor="#ff4757" />
-                <stop offset="100%" stopColor="#5f27cd" />
-              </linearGradient>
-            </defs>
-            <path d="M50 10 L90 90 L10 90 Z" fill="url(#triangleGradient)" />
-          </svg>
-
-          {/* Flower/Petal Shape */}
-          <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-85" style={{ animationDelay: '1.5s' }} viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ff6b9d" />
-                <stop offset="25%" stopColor="#ffd93d" />
-                <stop offset="75%" stopColor="#6bcf7f" />
-                <stop offset="100%" stopColor="#5f27cd" />
-              </linearGradient>
-            </defs>
-            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(0 50 50)" />
-            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(72 50 50)" />
-            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(144 50 50)" />
-            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(216 50 50)" />
-            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(288 50 50)" />
-          </svg>
-
-          {/* Wave/Blob Shape */}
-          <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-85" style={{ animationDelay: '2s' }} viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffd93d" />
-                <stop offset="50%" stopColor="#ff4757" />
-                <stop offset="100%" stopColor="#ff6b9d" />
-              </linearGradient>
-            </defs>
-            <path d="M20 30 Q50 10 80 30 Q90 50 80 70 Q50 90 20 70 Q10 50 20 30 Z" fill="url(#waveGradient)" />
-          </svg>
-
-          {/* Circular/Split Shape */}
-          <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-85" style={{ animationDelay: '2.5s' }} viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffd93d" />
-                <stop offset="50%" stopColor="#6bcf7f" />
-                <stop offset="100%" stopColor="#5f27cd" />
-              </linearGradient>
-            </defs>
-            <circle cx="30" cy="50" r="25" fill="url(#circleGradient)" />
-            <circle cx="70" cy="50" r="25" fill="url(#circleGradient)" />
-          </svg>
-        </div>
+        <nav>
+          <a 
+            href="#about" 
+            className="text-white portfolio-hover"
+          >
+            About
+          </a>
+        </nav>
       </header>
 
-      <div className="flex h-[calc(100vh-200px)]">
+      <div className="flex h-[calc(100vh-120px)]">
         {/* Left Sidebar - Fixed */}
         <aside className="w-full lg:w-1/3 xl:w-1/4 px-6 lg:px-8 flex-shrink-0 animate-slide-in-left">
           <section id="about" className="border-t portfolio-border pt-8">
