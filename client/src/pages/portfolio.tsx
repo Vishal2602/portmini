@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import FeedbackWidget from "@/components/FeedbackWidget";
 
 export default function Portfolio() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -330,6 +331,9 @@ export default function Portfolio() {
           </button>
         </div>
       </footer>
+
+      {/* Feedback Widget */}
+      <FeedbackWidget />
     </div>
   );
 }
