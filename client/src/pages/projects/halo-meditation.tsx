@@ -80,7 +80,7 @@ export default function HaloMeditationProject() {
       </aside>
 
       {/* Main Content - Scrollable */}
-      <main className="flex-1 w-full md:ml-80 lg:ml-96 overflow-y-auto px-4 md:px-6 lg:px-8 lg:pl-16 scrollable-main relative">
+      <main className="flex-1 w-full md:ml-80 lg:ml-96 overflow-y-auto px-4 md:px-6 lg:px-8 md:pl-16 scrollable-main relative">
         {/* Scroll Progress Indicator */}
         <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
           <div 

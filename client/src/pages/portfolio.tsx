@@ -168,11 +168,11 @@ export default function Portfolio() {
           </div>
             {/* Professional Experience Section */}
             <section className="border-t portfolio-border pt-8 mb-16 animate-slide-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-              <h2 className="text-xl font-normal mb-8 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>Professional Experience</h2>
+              <h2 className="text-lg md:text-xl font-normal mb-8 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>Professional Experience</h2>
               
               {/* Corporate Engagement Project Analyst & Researcher */}
               <div className="mb-12">
-                <h3 className="text-lg font-normal mb-1">Corporate Engagement Project Analyst & Researcher</h3>
+                <h3 className="text-base md:text-lg font-normal mb-1">Corporate Engagement Project Analyst & Researcher</h3>
                 <p className="text-sm portfolio-text-muted mb-1">
                   University of Massachusetts Dartmouth <span>↗</span>
                 </p>
@@ -193,7 +193,7 @@ export default function Portfolio() {
 
               {/* UX/UI Designer */}
               <div className="mb-12">
-                <h3 className="text-lg font-normal mb-1">UX/UI Designer</h3>
+                <h3 className="text-base md:text-lg font-normal mb-1">UX/UI Designer</h3>
                 <p className="text-sm portfolio-text-muted mb-1">
                   Indegene <span>↗</span>
                 </p>
