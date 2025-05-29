@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import GradientSymbols from "@/components/GradientSymbols";
+import splashImage from "@assets/Splash.png";
+import exploreJobBoardsImage from "@assets/Explore - Job Boards.png";
+import exploreMiscImage from "@assets/Explore - Misc.png";
+import exploreMagazineImage from "@assets/Explore - Magazine.png";
+import savedImage from "@assets/Saved.png";
+import fullNewsImage from "@assets/Full News.png";
+import fullNewsCricketImage from "@assets/Full news cricket.png";
+import fullNewsRonaldoImage from "@assets/Full News ronaldo.png";
 
 export default function ThePigeonAppProject() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -440,6 +448,22 @@ export default function ThePigeonAppProject() {
                 <p className="text-sm portfolio-text-muted mb-4">
                   The final product features a modern mobile interface that successfully modernizes the newspaper experience with clean design, intuitive navigation, and comprehensive content organization.
                 </p>
+                
+                {/* Splash Screen */}
+                <div className="mb-8">
+                  <h4 className="font-medium mb-4">Brand Identity & Splash Screen</h4>
+                  <div className="flex justify-center mb-4">
+                    <img 
+                      src={splashImage} 
+                      alt="The Pigeon app splash screen with orange branding"
+                      className="max-w-xs rounded-lg shadow-lg"
+                    />
+                  </div>
+                  <p className="text-sm portfolio-text-muted text-center">
+                    Clean splash screen showcasing The Pigeon's bold orange brand identity and minimalist design approach
+                  </p>
+                </div>
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-medium mb-3">Onboarding & Brand Identity</h4>
@@ -470,6 +494,15 @@ export default function ThePigeonAppProject() {
                     <p className="text-sm portfolio-text-muted mb-3">
                       Comprehensive job listing interface featuring major companies like Google, Microsoft, Adobe, and Amazon with clean card-based layout and search functionality.
                     </p>
+                    
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src={exploreJobBoardsImage} 
+                        alt="Job boards interface showing UX Designer positions at major companies"
+                        className="max-w-xs rounded-lg shadow-lg"
+                      />
+                    </div>
+                    
                     <div className="bg-gray-900 p-4 rounded">
                       <div className="grid md:grid-cols-3 gap-4 text-xs">
                         <div>
@@ -493,6 +526,15 @@ export default function ThePigeonAppProject() {
                     <p className="text-sm portfolio-text-muted mb-3">
                       Dedicated section for entertainment features including daily crosswords and Sudoku puzzles, maintaining the traditional newspaper experience.
                     </p>
+                    
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src={exploreMiscImage} 
+                        alt="Interactive content section showing daily crossword and Sudoku puzzles"
+                        className="max-w-xs rounded-lg shadow-lg"
+                      />
+                    </div>
+                    
                     <div className="bg-gray-900 p-4 rounded">
                       <div className="grid md:grid-cols-2 gap-4 text-xs">
                         <div>
@@ -512,6 +554,15 @@ export default function ThePigeonAppProject() {
                     <p className="text-sm portfolio-text-muted mb-3">
                       Digital magazine section featuring popular publications like Forbes, CitizenK, GQ, and Time with cover art and reading options.
                     </p>
+                    
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src={exploreMagazineImage} 
+                        alt="Magazine section displaying Forbes, CitizenK, GQ, and Time publications"
+                        className="max-w-xs rounded-lg shadow-lg"
+                      />
+                    </div>
+                    
                     <div className="bg-gray-900 p-4 rounded">
                       <div className="grid md:grid-cols-2 gap-4 text-xs">
                         <div>
@@ -530,6 +581,38 @@ export default function ThePigeonAppProject() {
 
               <div>
                 <h3 className="text-lg font-normal mb-4">News Reading Experience</h3>
+                <p className="text-sm portfolio-text-muted mb-4">
+                  Full-screen article reading interface with high-quality images, source attribution, and social engagement features across multiple content categories.
+                </p>
+                
+                {/* News Article Screenshots */}
+                <div className="grid md:grid-cols-3 gap-4 mb-6">
+                  <div className="text-center">
+                    <img 
+                      src={fullNewsImage} 
+                      alt="Financial news article about RBI and forex reserves"
+                      className="max-w-full rounded-lg shadow-lg mb-2"
+                    />
+                    <p className="text-xs portfolio-text-muted">Financial News - The Times</p>
+                  </div>
+                  <div className="text-center">
+                    <img 
+                      src={fullNewsCricketImage} 
+                      alt="Cricket news article about Ronaldo breaking records"
+                      className="max-w-full rounded-lg shadow-lg mb-2"
+                    />
+                    <p className="text-xs portfolio-text-muted">Sports News - ESPN</p>
+                  </div>
+                  <div className="text-center">
+                    <img 
+                      src={fullNewsRonaldoImage} 
+                      alt="Cricket championship news about India vs New Zealand"
+                      className="max-w-full rounded-lg shadow-lg mb-2"
+                    />
+                    <p className="text-xs portfolio-text-muted">Cricket Coverage - ESPN</p>
+                  </div>
+                </div>
+                
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-medium mb-3">Article Interface</h4>
@@ -557,6 +640,15 @@ export default function ThePigeonAppProject() {
                 <p className="text-sm portfolio-text-muted mb-4">
                   Dedicated saved section allows users to bookmark articles from various sources for later reading, addressing the key user need identified in research.
                 </p>
+                
+                <div className="flex justify-center mb-4">
+                  <img 
+                    src={savedImage} 
+                    alt="Saved articles interface showing bookmarked content from various sources"
+                    className="max-w-xs rounded-lg shadow-lg"
+                  />
+                </div>
+                
                 <div className="bg-gray-900 p-4 rounded">
                   <h4 className="font-medium mb-3">Personal Library Features</h4>
                   <div className="grid md:grid-cols-3 gap-4 text-xs">
