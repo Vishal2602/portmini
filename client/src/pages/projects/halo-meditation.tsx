@@ -25,9 +25,18 @@ export default function HaloMeditationProject() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white flex">
-      {/* Fixed Left Sidebar */}
-      <aside className="w-80 lg:w-96 fixed left-0 top-0 h-full flex flex-col">
+    <div className="min-h-screen bg-black text-white flex flex-col md:flex-row">
+      {/* Mobile Header */}
+      <div className="block md:hidden bg-black border-b border-gray-800 p-4 sticky top-0 z-50">
+        <Link href="/" className="portfolio-hover inline-block mb-2 text-sm">
+          ← Back to Portfolio
+        </Link>
+        <h1 className="text-xl font-normal">HALO Meditation App</h1>
+        <p className="text-sm portfolio-text-muted">Create a halo of positivity</p>
+      </div>
+
+      {/* Fixed Left Sidebar - Hidden on mobile */}
+      <aside className="hidden md:block w-80 lg:w-96 md:fixed left-0 top-0 h-full flex flex-col">
         <section className="flex-1 p-6 lg:p-8 overflow-y-auto scrollable-sidebar">
           <div className="animate-fade-in">
             <Link href="/" className="portfolio-hover inline-block mb-8">
@@ -71,7 +80,7 @@ export default function HaloMeditationProject() {
       </aside>
 
       {/* Main Content - Scrollable */}
-      <main className="flex-1 ml-80 lg:ml-96 overflow-y-auto px-6 lg:px-8 lg:pl-16 scrollable-main relative">
+      <main className="flex-1 w-full md:ml-80 lg:ml-96 overflow-y-auto px-4 md:px-6 lg:px-8 lg:pl-16 scrollable-main relative">
         {/* Scroll Progress Indicator */}
         <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
           <div 
@@ -80,10 +89,10 @@ export default function HaloMeditationProject() {
           />
         </div>
 
-        <div className="py-8 max-w-4xl">
+        <div className="py-6 md:py-8 max-w-4xl">
           {/* Project Overview */}
-          <section className="mb-16">
-            <h2 className="text-2xl font-normal mb-6">Project Overview</h2>
+          <section className="mb-12 md:mb-16">
+            <h2 className="text-xl md:text-2xl font-normal mb-4 md:mb-6">Project Overview</h2>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-normal mb-4">Vision Statement</h3>

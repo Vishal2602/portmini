@@ -200,26 +200,26 @@ export default function Home() {
 
           {/* Featured Projects Section */}
           <section className="border-t portfolio-border pt-8 mb-16 animate-slide-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-            <h2 className="text-xl font-normal mb-8 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>Featured Projects</h2>
+            <h2 className="text-xl md:text-2xl font-normal mb-8 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>Featured Projects</h2>
             
             <div className="space-y-12">
               {/* F1 Monk Project */}
               <div className="animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'both' }}>
                 <div className="mb-4">
                   <Link href="/projects/f1-monk">
-                    <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">F1 Monk - iOS Visa Assistant</h3>
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-normal mb-2 portfolio-hover cursor-pointer">F1 Monk - iOS Visa Assistant</h3>
                   </Link>
-                  <div className="flex flex-wrap gap-3 mb-4">
+                  <div className="flex flex-wrap gap-2 md:gap-3 mb-4">
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">iOS Development</span>
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">AI/ML</span>
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Natural Language Processing</span>
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Google Cloud</span>
                   </div>
                 </div>
-                <p className="text-base portfolio-text-muted mb-6 leading-relaxed">
+                <p className="text-sm md:text-base portfolio-text-muted mb-6 leading-relaxed">
                   A comprehensive mobile application that revolutionizes visa compliance management for international students. Adopted by 200+ students, the app integrates Google Cloud Dialogflow, xAI, and Grok API for intelligent natural language processing. Features include automated deadline tracking, document management, and intelligent scheduling—all achieving a 95% user satisfaction rating.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-sm">
                   <div>
                     <h4 className="font-medium mb-2">Key Features</h4>
                     <ul className="space-y-1 portfolio-text-muted">
