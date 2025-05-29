@@ -32,52 +32,51 @@ export default function Portfolio() {
         </nav>
       </header>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-          {/* Left Sidebar */}
-          <aside className="lg:col-span-4">
-            <section id="about" className="border-t portfolio-border pt-8 mb-8">
-              <p className="text-base max-w-md leading-relaxed mb-8">
-                A seasoned Senior Producer with 10+ years of experience, I excel in leading 
-                complex marketing and design projects from concept to completion.
+      <div className="flex h-[calc(100vh-120px)]">
+        {/* Left Sidebar - Fixed */}
+        <aside className="w-full lg:w-1/3 xl:w-1/4 px-6 lg:px-8 flex-shrink-0">
+          <section id="about" className="border-t portfolio-border pt-8">
+            <p className="text-base max-w-md leading-relaxed mb-8">
+              A seasoned Senior Producer with 10+ years of experience, I excel in leading 
+              complex marketing and design projects from concept to completion.
+            </p>
+            
+            <div className="space-y-2 text-sm">
+              <p>
+                <a 
+                  href="mailto:hello@figma.com" 
+                  className="portfolio-text-muted portfolio-hover"
+                >
+                  hello@figma.com
+                </a>
+                <span className="portfolio-text-muted"> ↗</span>
               </p>
-              
-              <div className="space-y-2 text-sm">
-                <p>
-                  <a 
-                    href="mailto:hello@figma.com" 
-                    className="portfolio-text-muted portfolio-hover"
-                  >
-                    hello@figma.com
-                  </a>
-                  <span className="portfolio-text-muted"> ↗</span>
-                </p>
-                <p>
-                  <a 
-                    href="tel:+15551234567" 
-                    className="portfolio-text-muted portfolio-hover"
-                  >
-                    (555) 123-4567
-                  </a>
-                  <span className="portfolio-text-muted"> ↗</span>
-                </p>
-                <p>
-                  <a 
-                    href="https://linkedin.com/in/alexandra-moore" 
-                    className="portfolio-text-muted portfolio-hover"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                  <span className="portfolio-text-muted"> ↗</span>
-                </p>
-              </div>
-            </section>
-          </aside>
+              <p>
+                <a 
+                  href="tel:+15551234567" 
+                  className="portfolio-text-muted portfolio-hover"
+                >
+                  (555) 123-4567
+                </a>
+                <span className="portfolio-text-muted"> ↗</span>
+              </p>
+              <p>
+                <a 
+                  href="https://linkedin.com/in/alexandra-moore" 
+                  className="portfolio-text-muted portfolio-hover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+                <span className="portfolio-text-muted"> ↗</span>
+              </p>
+            </div>
+          </section>
+        </aside>
 
-          {/* Main Content */}
-          <main className="lg:col-span-8">
+        {/* Main Content - Scrollable */}
+        <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16">
             {/* Experience Section */}
             <section className="border-t portfolio-border pt-8 mb-16">
               <h2 className="text-xl font-normal mb-8">Experience</h2>
@@ -250,7 +249,6 @@ export default function Portfolio() {
               </p>
             </section>
           </main>
-        </div>
       </div>
 
       {/* Footer */}
