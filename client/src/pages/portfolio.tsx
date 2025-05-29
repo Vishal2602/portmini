@@ -142,6 +142,9 @@ export default function Portfolio() {
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
             </div>
+            
+            {/* Gradient Symbols */}
+            <GradientSymbols />
           </section>
         </aside>
 
@@ -332,9 +335,6 @@ export default function Portfolio() {
           </button>
         </div>
       </footer>
-
-      {/* Gradient Symbols */}
-      <GradientSymbols />
 
       {/* Feedback Widget */}
       <FeedbackWidget />
