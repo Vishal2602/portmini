@@ -218,32 +218,32 @@ export default function Portfolio() {
 
             {/* Technical Skills Section */}
             <section className="border-t portfolio-border pt-8 mb-16">
-              <h2 className="text-xl font-normal mb-8">Technical Skills</h2>
+              <h2 className="text-lg md:text-xl font-normal mb-8">Technical Skills</h2>
               
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 <div>
-                  <h3 className="text-base font-normal mb-4">Programming & Development</h3>
+                  <h3 className="text-sm md:text-base font-normal mb-4">Programming & Development</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• Python, Java, C++, SQL, React, Next.js, Vue.js, Django, Node.js, REST APIs</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="text-base font-normal mb-4">AI & Machine Learning</h3>
+                  <h3 className="text-sm md:text-base font-normal mb-4">AI & Machine Learning</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• Transformers, LLM Fine-tuning, RAG Systems, OpenAI API, Hugging Face, TensorFlow, PyTorch</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="text-base font-normal mb-4">ML Operations & Evaluation</h3>
+                  <h3 className="text-sm md:text-base font-normal mb-4">ML Operations & Evaluation</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• RAGAS benchmarks, MLflow, Model Monitoring, A/B Testing</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="text-base font-normal mb-4">Design & Visualization</h3>
+                  <h3 className="text-sm md:text-base font-normal mb-4">Design & Visualization</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• Figma, Adobe Creative Suite, Sketch, D3.js, Matplotlib, Seaborn, D3.js Training</li>
                   </ul>
@@ -281,11 +281,11 @@ export default function Portfolio() {
 
             {/* Education Section */}
             <section className="border-t portfolio-border pt-8 mb-16">
-              <h2 className="text-xl font-normal mb-8">Education</h2>
+              <h2 className="text-lg md:text-xl font-normal mb-8">Education</h2>
               
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 <div>
-                  <p className="text-base font-normal mb-2">
+                  <p className="text-sm md:text-base font-normal mb-2">
                     University of Massachusetts Dartmouth
                   </p>
                   <p className="text-sm portfolio-text-muted">May 2025</p>
