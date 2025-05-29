@@ -1,0 +1,128 @@
+ Project Title: HALO
+Tagline: Create a halo of positivity
+
+💡 Case Study Overview
+HALO is a meditation and relaxation app designed to help users manage stress, improve focus, and sleep better through calming audio experiences and live instructor-led sessions. Unlike other wellness apps, HALO is entirely free and emphasizes accessibility, interaction, and variety in relaxation techniques.
+
+🔍 Problem Statement
+“To make an app to help people relax, sleep, reduce stress and anxiety, or just listen to relaxing sounds. The app should be completely free, as peace of mind does not have a price.”
+
+Modern life is hectic, and people struggle with sleep, anxiety, and burnout. Most meditation apps are locked behind paywalls or offer limited personalization and interaction.
+
+✅ Solution
+HALO offers:
+
+Guided and unguided meditation
+
+Nature and calming sounds
+
+Personalized sound journeys
+
+Live instructor sessions
+
+Interactive and intuitive onboarding
+
+“HALO is a one-stop solution for peace of mind. Users can find new ways to relax while engaging in live sessions and personal growth.”
+
+🧪 Research & Competitive Analysis
+Analyzed competitors like:
+
+Calm
+
+Headspace
+
+Aura
+
+Inside Timer
+
+Oak
+
+Feature	Calm	Headspace	Aura	Inside Timer	Oak	HALO
+Free Access	❌	❌	❌	✅	✅	✅
+Guided Meditations	✅	✅	✅	✅	✅	✅
+Live Sessions	❌	❌	❌	✅	❌	✅
+Relaxing Sounds	✅	✅	✅	✅	✅	✅
+Reminders	✅	✅	✅	✅	❌	✅
+Interactivity	❌	❌	❌	❌	❌	✅
+
+HALO fills the gap with interactivity + live features + no paywalls, creating a standout value proposition.
+
+👤 User Personas
+🔹 Dan Bush – 28, Art Designer (New York, NY)
+Goals: Relax, sleep better, improve focus
+
+Frustrations: Struggles with sleep, unsure how to meditate
+
+Personality: Energetic, ambitious
+
+Apps: Slack, Netflix
+
+🔹 Jenna Max – 28, Consultant (London, ENG)
+Goals: Meditate regularly, find inner peace
+
+Frustrations: Travel disrupts routine, forgets to meditate
+
+Personality: Introvert, optimistic
+
+Apps: Facebook, Amazon
+
+Users are busy professionals seeking calm through tech. HALO meets them where they are: mobile, intuitive, and quick.
+
+🗺️ User Flow
+Splash Screen
+
+Onboarding (x3 screens)
+
+Sign In / Sign Up
+
+Setting up goals & validation
+
+Navigation Options:
+
+Home → Recommendations, Scheduled events
+
+Live → Real-time sessions
+
+Categories → Sleep, Music, Relax, Yoga
+
+Search → Find sound types
+
+Profile → User preferences, favorites
+
+The flow is minimal, user-centered, and encourages rapid habit formation.
+
+📐 Design Process
+Research
+
+Persona Creation
+
+User Flow Mapping
+
+Wireframe
+
+Prototype in Figma
+
+A user-first design sprint approach using quick iterations, handwritten ideations, and visual validation.
+
+🎨 UI/UX Design Style
+Theme: Soothing purples and pinks to reflect calmness
+
+Tone: Soft shadows, modern gradients, and 3D avatars for friendly appeal
+
+Layout: Card-based modular UI
+
+Visual Elements: Rounded corners, intuitive icons, and calm animations
+
+📈 Key Differentiators
+🌟 Free and fully unlocked
+
+🧘‍♀️ Live instructor sessions
+
+🎧 Highly curated sound journeys
+
+👥 Interactive onboarding with goals
+
+📅 Personalized schedules and reminders
+
+💬 Final Thoughts
+HALO is more than a meditation app—it’s a wellness ecosystem built with empathy and accessibility in mind. Its unique offering lies in merging community-led live features with a personalized and peaceful interface.

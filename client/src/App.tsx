@@ -8,6 +8,7 @@ import Portfolio from "@/pages/portfolio";
 import F1MonkProject from "@/pages/projects/f1-monk";
 import AdaptivePromptProject from "@/pages/projects/adaptive-prompt";
 import ThePigeonAppProject from "@/pages/projects/the-pigeon-app";
+import HaloMeditationProject from "@/pages/projects/halo-meditation";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/projects/f1-monk" component={F1MonkProject} />
       <Route path="/projects/adaptive-prompt" component={AdaptivePromptProject} />
       <Route path="/projects/the-pigeon-app" component={ThePigeonAppProject} />
+      <Route path="/projects/halo-meditation" component={HaloMeditationProject} />
       <Route component={NotFound} />
     </Switch>
   );

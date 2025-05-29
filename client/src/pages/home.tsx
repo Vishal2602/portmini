@@ -316,6 +316,44 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* HALO Meditation App Project */}
+              <div className="animate-fade-in" style={{ animationDelay: '1.6s', animationFillMode: 'both' }}>
+                <div className="mb-4">
+                  <Link href="/projects/halo-meditation">
+                    <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">HALO - Meditation App Design</h3>
+                  </Link>
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Mobile UX Design</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Wellness Platform</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">User Research</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Accessibility Design</span>
+                  </div>
+                </div>
+                <p className="text-base portfolio-text-muted mb-6 leading-relaxed">
+                  "Create a halo of positivity" - A completely free meditation and wellness app designed to democratize access to mental health tools. Features live instructor sessions, personalized sound journeys, and interactive onboarding, addressing market gaps in accessibility and community engagement within wellness applications.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <h4 className="font-medium mb-2">Innovation & Accessibility</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• Completely free platform with no paywalls</li>
+                      <li>• Live instructor-led meditation sessions</li>
+                      <li>• Competitive analysis against 5 major apps</li>
+                      <li>• Interactive goal-setting onboarding</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">Design Excellence</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• Calming purple and pink color palette</li>
+                      <li>• 3D avatars and modern gradients</li>
+                      <li>• Card-based modular UI system</li>
+                      <li>• User-centered design sprint methodology</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
