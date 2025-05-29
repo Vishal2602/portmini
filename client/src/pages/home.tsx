@@ -239,7 +239,9 @@ export default function Home() {
               {/* Adaptive Prompt Engineering Project */}
               <div className="animate-fade-in" style={{ animationDelay: '1.2s', animationFillMode: 'both' }}>
                 <div className="mb-4">
-                  <h3 className="text-2xl font-normal mb-2">Adaptive Prompt Engineering Framework</h3>
+                  <Link href="/projects/adaptive-prompt">
+                    <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">Adaptive Prompt Engineering Framework</h3>
+                  </Link>
                   <div className="flex flex-wrap gap-3 mb-4">
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Machine Learning</span>
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">TypeScript</span>
@@ -275,7 +277,9 @@ export default function Home() {
               {/* Healthcare AI Platform */}
               <div className="animate-fade-in" style={{ animationDelay: '1.4s', animationFillMode: 'both' }}>
                 <div className="mb-4">
-                  <h3 className="text-2xl font-normal mb-2">Healthcare AI Platform Enhancement</h3>
+                  <Link href="/projects/healthcare-ai">
+                    <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">Healthcare AI Platform Enhancement</h3>
+                  </Link>
                   <div className="flex flex-wrap gap-3 mb-4">
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">UX Design</span>
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Healthcare</span>

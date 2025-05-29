@@ -183,18 +183,9 @@ export default function AdaptivePromptProject() {
                 <div className="bg-gray-900 p-6 rounded-lg">
                   <h4 className="font-medium mb-4">Reinforcement Learning Pipeline</h4>
                   <div className="bg-gray-800 p-4 rounded text-xs text-green-400 mb-4">
-                    <code>
-                      class AdaptivePromptOptimizer:<br/>
-                      &nbsp;&nbsp;def __init__(self, model_config, reward_function):<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;self.q_network = build_q_network(model_config)<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;self.genetic_optimizer = GeneticAlgorithm()<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;self.reward_function = reward_function<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;self.experience_buffer = ReplayBuffer()<br/><br/>
-                      &nbsp;&nbsp;def optimize_prompt(self, initial_prompt, target_metrics):<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;state = encode_prompt_state(initial_prompt)<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;action_space = generate_modification_actions()<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;return self.select_optimal_action(state, action_space)
-                    </code>
+                    <p className="font-mono">
+                      Key components: Q-learning network, genetic optimizer, reward function, and experience buffer for training the adaptive prompt system.
+                    </p>
                   </div>
                   <p className="text-sm portfolio-text-muted">
                     The system uses a dual-optimization approach, combining Q-learning for immediate feedback and genetic algorithms for long-term evolutionary improvement.

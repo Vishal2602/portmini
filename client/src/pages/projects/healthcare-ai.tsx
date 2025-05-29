@@ -223,21 +223,9 @@ export default function HealthcareAIProject() {
                   Developed a comprehensive design system that leverages AI to ensure consistency across platforms while adapting to specific healthcare contexts and user needs.
                 </p>
                 <div className="bg-gray-900 p-4 rounded text-xs text-cyan-400">
-                  <code>
-                    // AI-powered component generation<br/>
-                    interface HealthcareComponent {<br/>
-                    &nbsp;&nbsp;context: 'clinical' | 'research' | 'administrative';<br/>
-                    &nbsp;&nbsp;complianceLevel: 'HIPAA' | 'FDA' | 'SOC2';<br/>
-                    &nbsp;&nbsp;accessibility: AccessibilityRequirements;<br/>
-                    &nbsp;&nbsp;dataVisualization: ChartConfiguration;<br/>
-                    }<br/><br/>
-                    function generateAdaptiveComponent(requirements: HealthcareComponent) {<br/>
-                    &nbsp;&nbsp;const baseComponent = selectOptimalPattern(requirements.context);<br/>
-                    &nbsp;&nbsp;const compliantStyling = applyComplianceRules(requirements.complianceLevel);<br/>
-                    &nbsp;&nbsp;const accessibleMarkup = enhanceAccessibility(requirements.accessibility);<br/>
-                    &nbsp;&nbsp;return optimizeForPerformance(baseComponent, compliantStyling, accessibleMarkup);<br/>
-                    }
-                  </code>
+                  <p className="font-mono">
+                    Healthcare component generation system with context-aware design patterns, compliance validation, and accessibility enhancements.
+                  </p>
                 </div>
               </div>
             </div>
@@ -277,21 +265,9 @@ export default function HealthcareAIProject() {
                   Implemented Agile workflows and automated CI/CD pipelines that reduced design-to-development handoff time by 30%, enabling faster iteration and deployment cycles.
                 </p>
                 <div className="bg-gray-900 p-4 rounded text-xs text-green-400">
-                  <code>
-                    # CI/CD Pipeline for Healthcare Applications<br/>
-                    name: Healthcare Platform Deployment<br/>
-                    on: [push, pull_request]<br/>
-                    jobs:<br/>
-                    &nbsp;&nbsp;compliance-check:<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;runs-on: ubuntu-latest<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;steps:<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- name: HIPAA Compliance Scan<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: ./scripts/hipaa-compliance-check.sh<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- name: Security Vulnerability Assessment<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: npm audit --audit-level high<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- name: Accessibility Testing<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: npm run test:a11y
-                  </code>
+                  <p className="font-mono">
+                    Automated CI/CD pipeline with HIPAA compliance scanning, security assessments, and accessibility testing for healthcare applications.
+                  </p>
                 </div>
               </div>
             </div>
