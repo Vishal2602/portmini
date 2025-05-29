@@ -7,38 +7,38 @@ export default function GradientSymbols() {
   return (
     <div className="flex space-x-6 mt-8 animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'both' }}>
       {/* Star */}
-      <div className="relative w-12 h-12 animate-float" style={{ animationDelay: '0s' }}>
+      <div className="relative w-12 h-12 animate-float cursor-pointer" style={{ animationDelay: '0s' }}>
         <img 
           src={starImage} 
           alt="Star symbol" 
-          className="w-full h-full object-contain opacity-90"
+          className="w-full h-full object-contain opacity-90 symbol-hover"
         />
       </div>
       
       {/* Triangle */}
-      <div className="relative w-12 h-12 animate-float" style={{ animationDelay: '0.2s' }}>
+      <div className="relative w-12 h-12 animate-float cursor-pointer" style={{ animationDelay: '0.2s' }}>
         <img 
           src={triangleImage} 
           alt="Triangle symbol" 
-          className="w-full h-full object-contain opacity-90"
+          className="w-full h-full object-contain opacity-90 symbol-hover"
         />
       </div>
       
       {/* Flower */}
-      <div className="relative w-12 h-12 animate-float" style={{ animationDelay: '0.4s' }}>
+      <div className="relative w-12 h-12 animate-float cursor-pointer" style={{ animationDelay: '0.4s' }}>
         <img 
           src={flowerImage} 
           alt="Flower symbol" 
-          className="w-full h-full object-contain opacity-90"
+          className="w-full h-full object-contain opacity-90 symbol-hover"
         />
       </div>
       
       {/* Blob */}
-      <div className="relative w-12 h-12 animate-float" style={{ animationDelay: '0.6s' }}>
+      <div className="relative w-12 h-12 animate-float cursor-pointer" style={{ animationDelay: '0.6s' }}>
         <img 
           src={blobImage} 
           alt="Blob symbol" 
-          className="w-full h-full object-contain opacity-90"
+          className="w-full h-full object-contain opacity-90 symbol-hover"
         />
       </div>
     </div>
