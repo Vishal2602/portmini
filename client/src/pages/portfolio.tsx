@@ -144,7 +144,24 @@ export default function Portfolio() {
         </svg>
       </div>
 
+      {/* Header */}
+      <header className="relative flex justify-between items-start p-6 lg:p-8 animate-slide-down z-10">
 
+        <div>
+          <h1 className="text-2xl lg:text-3xl font-normal mb-1">
+            Vishal Sunil Kumar
+          </h1>
+          <p className="text-lg portfolio-text-muted">AI Engineer & UX Designer</p>
+        </div>
+        <nav>
+          <a 
+            href="#about" 
+            className="text-white portfolio-hover"
+          >
+            About
+          </a>
+        </nav>
+      </header>
 
       <div className="flex h-[calc(100vh-120px)]">
         {/* Left Sidebar - Fixed */}
