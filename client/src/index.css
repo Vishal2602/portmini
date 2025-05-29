@@ -143,6 +143,54 @@
   }
 }
 
+/* Mobile responsive utilities */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  
+  .mobile-full-width {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  
+  .mobile-padding {
+    padding: 1rem !important;
+  }
+  
+  .mobile-text-sm {
+    font-size: 0.875rem !important;
+  }
+  
+  .mobile-text-base {
+    font-size: 1rem !important;
+  }
+  
+  .mobile-mb-4 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .mobile-grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-space-y-6 > * + * {
+    margin-top: 1.5rem !important;
+  }
+}
+
+/* Hide scrollbars for webkit browsers */
+.scrollable-main::-webkit-scrollbar,
+.scrollable-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars for Firefox */
+.scrollable-main,
+.scrollable-sidebar {
+  scrollbar-width: none;
+}
+
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out;
 }

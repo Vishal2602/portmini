@@ -76,8 +76,14 @@ export default function Home() {
 
   return (
     <div className={`min-h-screen bg-black text-white transition-all duration-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-      {/* Header */}
-      <header className="flex justify-between items-start p-6 lg:p-8 animate-slide-down">
+      {/* Mobile Header */}
+      <div className="block md:hidden bg-black border-b border-gray-800 p-4 sticky top-0 z-50">
+        <h1 className="text-xl font-normal">Vishal Sunil Kumar</h1>
+        <p className="text-sm portfolio-text-muted">AI Engineer & UX Designer</p>
+      </div>
+
+      {/* Desktop Header */}
+      <header className="hidden md:flex justify-between items-start p-6 lg:p-8 animate-slide-down">
         <div>
           <h1 className="text-2xl lg:text-3xl font-normal mb-1">
             Vishal Sunil Kumar
@@ -94,9 +100,9 @@ export default function Home() {
         </nav>
       </header>
 
-      <div className="flex h-[calc(100vh-120px)]">
-        {/* Left Sidebar - Fixed */}
-        <aside className="w-full lg:w-1/3 xl:w-1/4 px-6 lg:px-8 flex-shrink-0 animate-slide-in-left">
+      <div className="flex flex-col md:flex-row h-auto md:h-[calc(100vh-120px)]">
+        {/* Left Sidebar - Full width on mobile, sidebar on desktop */}
+        <aside className="w-full md:w-1/3 lg:w-1/3 xl:w-1/4 px-4 md:px-6 lg:px-8 flex-shrink-0 animate-slide-in-left">
           <section id="about" className="border-t portfolio-border pt-8">
             <p className="text-base max-w-md leading-relaxed mb-8 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
               AI Engineer and UX Designer with 3+ years developing production-scale LLM applications and human-centered design systems. Delivered 25% user engagement increases across 100+ healthcare platforms through optimized RAG architectures and data-driven design methodologies.
@@ -149,7 +155,7 @@ export default function Home() {
         </aside>
 
         {/* Main Content - Scrollable */}
-        <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16 scrollable-main relative animate-slide-in-right">
+        <main className="flex-1 overflow-y-auto px-4 md:px-6 lg:px-8 lg:pl-16 scrollable-main relative animate-slide-in-right">
           {/* Scroll Progress Indicator */}
           <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
             <div 
@@ -161,10 +167,10 @@ export default function Home() {
           {/* Hello Section */}
           <section className="border-t portfolio-border pt-8 mb-16 animate-slide-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
             <div className="mb-12">
-              <h2 className="text-4xl lg:text-5xl font-normal mb-6 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-6 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
                 Hello! 👋
               </h2>
-              <p className="text-xl lg:text-2xl max-w-4xl leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
+              <p className="text-lg md:text-xl lg:text-2xl max-w-4xl leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
                 I'm a passionate AI Engineer and UX Designer who bridges the gap between cutting-edge technology and human-centered design. I specialize in building intelligent systems that not only work flawlessly but also provide delightful user experiences.
               </p>
             </div>
