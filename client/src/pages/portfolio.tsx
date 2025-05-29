@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "wouter";
 import FeedbackWidget from "@/components/FeedbackWidget";
 import GradientSymbols from "@/components/GradientSymbols";
 
@@ -84,13 +85,13 @@ export default function Portfolio() {
           </h1>
           <p className="text-lg portfolio-text-muted">AI Engineer & UX Designer</p>
         </div>
-        <nav>
-          <a 
-            href="#about" 
-            className="text-white portfolio-hover"
-          >
-            About
-          </a>
+        <nav className="flex space-x-6">
+          <Link href="/" className="text-white portfolio-hover">
+            Home
+          </Link>
+          <Link href="/resume" className="text-white portfolio-hover">
+            Resume
+          </Link>
         </nav>
       </header>
 
