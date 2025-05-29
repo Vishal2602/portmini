@@ -310,6 +310,44 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* VR Luxury Brand Project */}
+              <div className="animate-fade-in" style={{ animationDelay: '1.6s', animationFillMode: 'both' }}>
+                <div className="mb-4">
+                  <Link href="/projects/vr-luxury-brand">
+                    <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">VR Luxury Brand Design System</h3>
+                  </Link>
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Brand Design</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">UI/UX Design</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Design Systems</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Visual Identity</span>
+                  </div>
+                </div>
+                <p className="text-base portfolio-text-muted mb-6 leading-relaxed">
+                  Comprehensive luxury brand identity and digital design system featuring sophisticated visual hierarchy, premium user experiences, and cohesive brand applications across all touchpoints. Developed complete brand guidelines, digital platforms, and marketing assets that increased brand recognition by 40% and user engagement by 35%.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <h4 className="font-medium mb-2">Brand Excellence</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• Luxury brand identity development</li>
+                      <li>• 120+ design system components</li>
+                      <li>• Cross-platform consistency</li>
+                      <li>• Premium packaging design</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">Digital Innovation</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• E-commerce platform design</li>
+                      <li>• Mobile app interfaces</li>
+                      <li>• Marketing asset systems</li>
+                      <li>• Brand guidelines documentation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
