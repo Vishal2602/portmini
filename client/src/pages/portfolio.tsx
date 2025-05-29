@@ -1,15 +1,36 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Portfolio() {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
   useEffect(() => {
     document.title = "Vishal Sunil Kumar - AI Engineer & UX Designer Portfolio";
   }, []);
 
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      const target = e.target as HTMLElement;
+      const scrollTop = target.scrollTop;
+      const scrollHeight = target.scrollHeight - target.clientHeight;
+      const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      setScrollProgress(progress);
+    };
+
+    const mainElement = document.querySelector('.scrollable-main');
+    if (mainElement) {
+      mainElement.addEventListener('scroll', handleScroll);
+      return () => mainElement.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    const mainElement = document.querySelector('.scrollable-main');
+    if (mainElement) {
+      mainElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -84,7 +105,14 @@ export default function Portfolio() {
         </aside>
 
         {/* Main Content - Scrollable */}
-        <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16">
+        <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16 scrollable-main relative">
+          {/* Scroll Progress Indicator */}
+          <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
+            <div 
+              className="h-full bg-white transition-all duration-150 ease-out"
+              style={{ width: `${scrollProgress}%` }}
+            />
+          </div>
             {/* Professional Experience Section */}
             <section className="border-t portfolio-border pt-8 mb-16">
               <h2 className="text-xl font-normal mb-8">Professional Experience</h2>
