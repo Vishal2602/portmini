@@ -348,6 +348,44 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* E-commerce Platform Project */}
+              <div className="animate-fade-in" style={{ animationDelay: '1.8s', animationFillMode: 'both' }}>
+                <div className="mb-4">
+                  <Link href="/projects/ecommerce-platform">
+                    <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">E-commerce Platform & Mobile App Design</h3>
+                  </Link>
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">E-commerce Design</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Mobile App UI</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">User Experience</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Conversion Optimization</span>
+                  </div>
+                </div>
+                <p className="text-base portfolio-text-muted mb-6 leading-relaxed">
+                  Comprehensive digital commerce platform featuring native mobile applications, optimized checkout flows, and user account management systems. Achieved 45% mobile conversion rate increase and 32% cart abandonment reduction through strategic UX design and performance optimization.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <h4 className="font-medium mb-2">Mobile Excellence</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• Native iOS and Android apps</li>
+                      <li>• Touch-optimized interactions</li>
+                      <li>• Progressive web app capabilities</li>
+                      <li>• 4.8/5 app store rating</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">Conversion Focus</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• Streamlined checkout process</li>
+                      <li>• Payment integration optimization</li>
+                      <li>• Loyalty program design</li>
+                      <li>• 94% task completion rate</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
