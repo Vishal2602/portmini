@@ -76,7 +76,41 @@ export default function Portfolio() {
   return (
     <div className={`min-h-screen bg-black text-white transition-all duration-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
       {/* Header */}
-      <header className="flex justify-between items-start p-6 lg:p-8 animate-slide-down">
+      <header className="relative flex justify-between items-start p-6 lg:p-8 animate-slide-down">
+        {/* Decorative Gradient Symbols */}
+        <div className="absolute top-4 right-20 lg:right-32 flex space-x-4 opacity-80">
+          <img 
+            src="/attached_assets/tl(12).png" 
+            alt=""
+            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
+            style={{ animationDelay: '0.5s' }}
+          />
+          <img 
+            src="/attached_assets/tl(24).png" 
+            alt=""
+            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
+            style={{ animationDelay: '1s' }}
+          />
+          <img 
+            src="/attached_assets/tl(2).png" 
+            alt=""
+            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
+            style={{ animationDelay: '1.5s' }}
+          />
+          <img 
+            src="/attached_assets/tl(9).png" 
+            alt=""
+            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
+            style={{ animationDelay: '2s' }}
+          />
+          <img 
+            src="/attached_assets/tl(6).png" 
+            alt=""
+            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
+            style={{ animationDelay: '2.5s' }}
+          />
+        </div>
+
         <div>
           <h1 className="text-2xl lg:text-3xl font-normal mb-1">
             Vishal Sunil Kumar
