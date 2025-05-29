@@ -78,37 +78,72 @@ export default function Portfolio() {
       {/* Header */}
       <header className="relative flex justify-between items-start p-6 lg:p-8 animate-slide-down">
         {/* Decorative Gradient Symbols */}
-        <div className="absolute top-4 right-20 lg:right-32 flex space-x-4 opacity-80">
-          <img 
-            src="/attached_assets/tl(12).png" 
-            alt=""
-            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
-            style={{ animationDelay: '0.5s' }}
-          />
-          <img 
-            src="/attached_assets/tl(24).png" 
-            alt=""
-            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
-            style={{ animationDelay: '1s' }}
-          />
-          <img 
-            src="/attached_assets/tl(2).png" 
-            alt=""
-            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
-            style={{ animationDelay: '1.5s' }}
-          />
-          <img 
-            src="/attached_assets/tl(9).png" 
-            alt=""
-            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
-            style={{ animationDelay: '2s' }}
-          />
-          <img 
-            src="/attached_assets/tl(6).png" 
-            alt=""
-            className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse"
-            style={{ animationDelay: '2.5s' }}
-          />
+        <div className="absolute top-4 right-20 lg:right-32 flex space-x-3 lg:space-x-4 opacity-80">
+          {/* Star Shape */}
+          <svg className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse" style={{ animationDelay: '0.5s' }} viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ff6b9d" />
+                <stop offset="50%" stopColor="#ffd93d" />
+                <stop offset="100%" stopColor="#6bcf7f" />
+              </linearGradient>
+            </defs>
+            <path d="M50 10 L60 40 L90 40 L68 58 L78 88 L50 70 L22 88 L32 58 L10 40 L40 40 Z" fill="url(#starGradient)" />
+          </svg>
+
+          {/* Triangle Shape */}
+          <svg className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse" style={{ animationDelay: '1s' }} viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ff6b9d" />
+                <stop offset="50%" stopColor="#ff4757" />
+                <stop offset="100%" stopColor="#5f27cd" />
+              </linearGradient>
+            </defs>
+            <path d="M50 10 L90 90 L10 90 Z" fill="url(#triangleGradient)" />
+          </svg>
+
+          {/* Flower/Petal Shape */}
+          <svg className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse" style={{ animationDelay: '1.5s' }} viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ff6b9d" />
+                <stop offset="25%" stopColor="#ffd93d" />
+                <stop offset="75%" stopColor="#6bcf7f" />
+                <stop offset="100%" stopColor="#5f27cd" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(0 50 50)" />
+            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(72 50 50)" />
+            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(144 50 50)" />
+            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(216 50 50)" />
+            <ellipse cx="50" cy="25" rx="15" ry="25" fill="url(#flowerGradient)" transform="rotate(288 50 50)" />
+          </svg>
+
+          {/* Wave/Blob Shape */}
+          <svg className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse" style={{ animationDelay: '2s' }} viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ffd93d" />
+                <stop offset="50%" stopColor="#ff4757" />
+                <stop offset="100%" stopColor="#ff6b9d" />
+              </linearGradient>
+            </defs>
+            <path d="M50 10 Q80 30 80 50 Q80 80 50 80 Q20 80 20 50 Q20 30 50 10 Z" fill="url(#waveGradient)" />
+          </svg>
+
+          {/* Circular/Split Shape */}
+          <svg className="w-6 h-6 lg:w-8 lg:h-8 animate-pulse" style={{ animationDelay: '2.5s' }} viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ffd93d" />
+                <stop offset="50%" stopColor="#6bcf7f" />
+                <stop offset="100%" stopColor="#5f27cd" />
+              </linearGradient>
+            </defs>
+            <circle cx="30" cy="50" r="25" fill="url(#circleGradient)" />
+            <circle cx="70" cy="50" r="25" fill="url(#circleGradient)" />
+          </svg>
         </div>
 
         <div>
