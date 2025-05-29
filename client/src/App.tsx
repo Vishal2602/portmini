@@ -7,8 +7,6 @@ import Home from "@/pages/home";
 import Portfolio from "@/pages/portfolio";
 import F1MonkProject from "@/pages/projects/f1-monk";
 import AdaptivePromptProject from "@/pages/projects/adaptive-prompt";
-import HealthcareAIProject from "@/pages/projects/healthcare-ai";
-import VRLuxuryBrandProject from "@/pages/projects/vr-luxury-brand";
 import EcommercePlatformProject from "@/pages/projects/ecommerce-platform";
 import ThePigeonAppProject from "@/pages/projects/the-pigeon-app";
 import NotFound from "@/pages/not-found";
@@ -20,8 +18,6 @@ function Router() {
       <Route path="/resume" component={Portfolio} />
       <Route path="/projects/f1-monk" component={F1MonkProject} />
       <Route path="/projects/adaptive-prompt" component={AdaptivePromptProject} />
-      <Route path="/projects/healthcare-ai" component={HealthcareAIProject} />
-      <Route path="/projects/vr-luxury-brand" component={VRLuxuryBrandProject} />
       <Route path="/projects/ecommerce-platform" component={EcommercePlatformProject} />
       <Route path="/projects/the-pigeon-app" component={ThePigeonAppProject} />
       <Route component={NotFound} />
