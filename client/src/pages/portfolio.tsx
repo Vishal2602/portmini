@@ -2,9 +2,19 @@ import { useEffect, useState } from "react";
 
 export default function Portfolio() {
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     document.title = "Vishal Sunil Kumar - AI Engineer & UX Designer Portfolio";
+    
+    // Simulate loading and then show content with animation
+    const loadingTimer = setTimeout(() => {
+      setIsLoading(false);
+      setTimeout(() => setShowContent(true), 100);
+    }, 2000);
+
+    return () => clearTimeout(loadingTimer);
   }, []);
 
   useEffect(() => {
@@ -33,10 +43,39 @@ export default function Portfolio() {
     }
   };
 
+  // Loading screen component
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <div className="text-center">
+          {/* Animated logo/name */}
+          <div className="mb-8">
+            <h1 className="text-4xl font-normal mb-2 animate-pulse">
+              <span className="inline-block animate-bounce" style={{ animationDelay: '0ms' }}>V</span>
+              <span className="inline-block animate-bounce" style={{ animationDelay: '100ms' }}>i</span>
+              <span className="inline-block animate-bounce" style={{ animationDelay: '200ms' }}>s</span>
+              <span className="inline-block animate-bounce" style={{ animationDelay: '300ms' }}>h</span>
+              <span className="inline-block animate-bounce" style={{ animationDelay: '400ms' }}>a</span>
+              <span className="inline-block animate-bounce" style={{ animationDelay: '500ms' }}>l</span>
+            </h1>
+            <p className="text-lg portfolio-text-muted animate-fade-in">AI Engineer & UX Designer</p>
+          </div>
+          
+          {/* Loading spinner */}
+          <div className="flex justify-center space-x-2">
+            <div className="w-3 h-3 bg-white rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+            <div className="w-3 h-3 bg-white rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+            <div className="w-3 h-3 bg-white rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className={`min-h-screen bg-black text-white transition-all duration-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
       {/* Header */}
-      <header className="flex justify-between items-start p-6 lg:p-8">
+      <header className="flex justify-between items-start p-6 lg:p-8 animate-slide-down">
         <div>
           <h1 className="text-2xl lg:text-3xl font-normal mb-1">
             Vishal Sunil Kumar
@@ -55,14 +94,14 @@ export default function Portfolio() {
 
       <div className="flex h-[calc(100vh-120px)]">
         {/* Left Sidebar - Fixed */}
-        <aside className="w-full lg:w-1/3 xl:w-1/4 px-6 lg:px-8 flex-shrink-0">
+        <aside className="w-full lg:w-1/3 xl:w-1/4 px-6 lg:px-8 flex-shrink-0 animate-slide-in-left">
           <section id="about" className="border-t portfolio-border pt-8">
-            <p className="text-base max-w-md leading-relaxed mb-8">
+            <p className="text-base max-w-md leading-relaxed mb-8 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
               AI Engineer and UX Designer with 3+ years developing production-scale LLM applications and human-centered design systems. Delivered 25% user engagement increases across 100+ healthcare platforms through optimized RAG architectures and data-driven design methodologies.
             </p>
             
             <div className="space-y-2 text-sm">
-              <p>
+              <p className="animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
                 <a 
                   href="mailto:vsunilkumar@umassd.edu" 
                   className="portfolio-text-muted portfolio-hover"
@@ -71,7 +110,7 @@ export default function Portfolio() {
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
-              <p>
+              <p className="animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
                 <a 
                   href="tel:+14254786332" 
                   className="portfolio-text-muted portfolio-hover"
@@ -80,7 +119,7 @@ export default function Portfolio() {
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
-              <p>
+              <p className="animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'both' }}>
                 <a 
                   href="https://linkedin.com/in/vishal2602" 
                   className="portfolio-text-muted portfolio-hover"
@@ -91,7 +130,7 @@ export default function Portfolio() {
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
-              <p>
+              <p className="animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
                 <a 
                   href="#" 
                   className="portfolio-text-muted portfolio-hover"
@@ -105,7 +144,7 @@ export default function Portfolio() {
         </aside>
 
         {/* Main Content - Scrollable */}
-        <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16 scrollable-main relative">
+        <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16 scrollable-main relative animate-slide-in-right">
           {/* Scroll Progress Indicator */}
           <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
             <div 
@@ -114,8 +153,8 @@ export default function Portfolio() {
             />
           </div>
             {/* Professional Experience Section */}
-            <section className="border-t portfolio-border pt-8 mb-16">
-              <h2 className="text-xl font-normal mb-8">Professional Experience</h2>
+            <section className="border-t portfolio-border pt-8 mb-16 animate-slide-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+              <h2 className="text-xl font-normal mb-8 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>Professional Experience</h2>
               
               {/* Corporate Engagement Project Analyst & Researcher */}
               <div className="mb-12">
