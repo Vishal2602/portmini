@@ -46,8 +46,17 @@ export default function ThePigeonAppProject() {
 
   return (
     <div className={`min-h-screen bg-black text-white transition-all duration-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-      {/* Header */}
-      <header className="flex justify-between items-start p-6 lg:p-8 animate-slide-down">
+      {/* Mobile Header */}
+      <div className="block md:hidden bg-black border-b border-gray-800 p-4 sticky top-0 z-50">
+        <Link href="/" className="portfolio-hover inline-block mb-2 text-sm">
+          ← Back to Portfolio
+        </Link>
+        <h1 className="text-xl font-normal">The Pigeon</h1>
+        <p className="text-sm portfolio-text-muted">Modern News Application</p>
+      </div>
+
+      {/* Desktop Header */}
+      <header className="hidden md:flex justify-between items-start p-6 lg:p-8 animate-slide-down">
         <div>
           <h1 className="text-2xl lg:text-3xl font-normal mb-1">
             Vishal Sunil Kumar
