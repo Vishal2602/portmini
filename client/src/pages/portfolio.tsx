@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export default function Portfolio() {
   useEffect(() => {
-    document.title = "Alexandra Moore - Senior Producer Portfolio";
+    document.title = "Vishal Sunil Kumar - AI Engineer & UX Designer Portfolio";
   }, []);
 
   const scrollToTop = () => {
@@ -18,9 +18,9 @@ export default function Portfolio() {
       <header className="flex justify-between items-start p-6 lg:p-8">
         <div>
           <h1 className="text-2xl lg:text-3xl font-normal mb-1">
-            Alexandra Moore,
+            Vishal Sunil Kumar
           </h1>
-          <p className="text-lg portfolio-text-muted">Senior Producer</p>
+          <p className="text-lg portfolio-text-muted">AI Engineer & UX Designer</p>
         </div>
         <nav>
           <a 
@@ -37,37 +37,45 @@ export default function Portfolio() {
         <aside className="w-full lg:w-1/3 xl:w-1/4 px-6 lg:px-8 flex-shrink-0">
           <section id="about" className="border-t portfolio-border pt-8">
             <p className="text-base max-w-md leading-relaxed mb-8">
-              A seasoned Senior Producer with 10+ years of experience, I excel in leading 
-              complex marketing and design projects from concept to completion.
+              AI Engineer and UX Designer with 3+ years developing production-scale LLM applications and human-centered design systems. Delivered 25% user engagement increases across 100+ healthcare platforms through optimized RAG architectures and data-driven design methodologies.
             </p>
             
             <div className="space-y-2 text-sm">
               <p>
                 <a 
-                  href="mailto:hello@figma.com" 
+                  href="mailto:vsunilkumar@umassd.edu" 
                   className="portfolio-text-muted portfolio-hover"
                 >
-                  hello@figma.com
+                  vsunilkumar@umassd.edu
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
               <p>
                 <a 
-                  href="tel:+15551234567" 
+                  href="tel:+14254786332" 
                   className="portfolio-text-muted portfolio-hover"
                 >
-                  (555) 123-4567
+                  425-478-6332
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
               <p>
                 <a 
-                  href="https://linkedin.com/in/alexandra-moore" 
+                  href="https://linkedin.com/in/vishal2602" 
                   className="portfolio-text-muted portfolio-hover"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   LinkedIn
+                </a>
+                <span className="portfolio-text-muted"> ↗</span>
+              </p>
+              <p>
+                <a 
+                  href="#" 
+                  className="portfolio-text-muted portfolio-hover"
+                >
+                  designport.netlify.app
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
@@ -77,121 +85,115 @@ export default function Portfolio() {
 
         {/* Main Content - Scrollable */}
         <main className="flex-1 overflow-y-auto px-6 lg:px-8 lg:pl-16">
-            {/* Experience Section */}
+            {/* Professional Experience Section */}
             <section className="border-t portfolio-border pt-8 mb-16">
-              <h2 className="text-xl font-normal mb-8">Experience</h2>
+              <h2 className="text-xl font-normal mb-8">Professional Experience</h2>
               
-              {/* Senior Producer - Creative Agency XYZ */}
+              {/* Corporate Engagement Project Analyst & Researcher */}
               <div className="mb-12">
-                <h3 className="text-lg font-normal mb-1">Senior Producer</h3>
+                <h3 className="text-lg font-normal mb-1">Corporate Engagement Project Analyst & Researcher</h3>
                 <p className="text-sm portfolio-text-muted mb-1">
-                  Creative Agency XYZ <span>↗</span>
+                  University of Massachusetts Dartmouth <span>↗</span>
                 </p>
-                <p className="text-sm portfolio-text-muted mb-1">June 2022 - Present</p>
-                <p className="text-sm portfolio-text-muted mb-6">Remote & New York, NY</p>
+                <p className="text-sm portfolio-text-muted mb-1">August 2024 - May 2025</p>
                 
                 <ul className="space-y-3 text-sm">
                   <li>
-                    • Seamlessly facilitate diverse creative experiences; from immersive 
-                    installations to cinematic narratives. A catalyst for collaboration 
-                    across all mediums.
+                    • Engineered data analytics systems analyzing 25+ corporate partnerships, increasing sponsorship efficiency by 20%
                   </li>
                   <li>
-                    • Clients include: Lunethrix, Driftwell, Qyra, Forgeland and more.
+                    • Developed automated reporting dashboards using Python and Tableau, improving stakeholder decision-making processes
+                  </li>
+                  <li>
+                    • Processed 600+ user feedback submissions annually, streamlining workflows that saved 50 monthly hours from troubleshooting overhead
                   </li>
                 </ul>
               </div>
 
-              {/* Senior Producer - Five Studios */}
+              {/* UX/UI Designer */}
               <div className="mb-12">
-                <h3 className="text-lg font-normal mb-1">Senior Producer</h3>
+                <h3 className="text-lg font-normal mb-1">UX/UI Designer</h3>
                 <p className="text-sm portfolio-text-muted mb-1">
-                  Five Studios <span>↗</span>
+                  Indegene <span>↗</span>
                 </p>
-                <p className="text-sm portfolio-text-muted mb-1">December 2021 - June 2022</p>
-                <p className="text-sm portfolio-text-muted mb-6">New York, NY</p>
+                <p className="text-sm portfolio-text-muted mb-1">September 2021 - August 2023</p>
                 
                 <ul className="space-y-3 text-sm">
                   <li>
-                    • Orchestrated the creation of integrated video, motion, and photo 
-                    content for multi-platform marketing campaigns, ensuring seamless 
-                    execution and brand alignment.
+                    • Boosted user engagement by 25% across 10+ pharmaceutical and medical device platforms using AI-augmented design systems
                   </li>
                   <li>
-                    • Directed all phases of production operations (pre-production, 
-                    production, post-production), meticulously managing budgets, contracts, 
-                    and legal requirements to deliver projects on time and within quality standards.
+                    • Architected scalable multi-device serving infrastructure supporting HubSpot and Redis caching, supporting 3 healthcare platforms with 99.9% uptime
                   </li>
                   <li>
-                    • Strategically developed and managed production schedules, creative 
-                    strategies, and talent relations, optimizing resources to deliver 
-                    high-quality content within budget parameters.
+                    • Reduced design-to-development handoff time by 30% implementing Agile workflows and automated CI/CD pipelines
                   </li>
                   <li>
-                    • Clients include: Nestiva, Zemrex, Pollenate, Vireo and more.
-                  </li>
-                </ul>
-              </div>
-
-              {/* Content Producer - Creative Hub Studio */}
-              <div className="mb-12">
-                <h3 className="text-lg font-normal mb-1">Content Producer</h3>
-                <p className="text-sm portfolio-text-muted mb-1">
-                  Creative Hub Studio <span>↗</span>
-                </p>
-                <p className="text-sm portfolio-text-muted mb-1">October 2019 - March 2019</p>
-                <p className="text-sm portfolio-text-muted mb-6">Los Angeles, CA</p>
-                
-                <ul className="space-y-3 text-sm">
-                  <li>
-                    • Facilitated clear and efficient communication across cross-functional 
-                    teams (Marketing, Brand, Creative, IT, QA), ensuring seamless collaboration 
-                    and project alignment.
-                  </li>
-                  <li>
-                    • Proactively identified and integrated industry trends, emerging 
-                    technologies, and cultural insights to enhance creative output and 
-                    maintain brand relevance.
-                  </li>
-                  <li>
-                    • Clients include: Lunethrix, Forgeland and more.
+                    • Mentored 3 junior designers while conducting 50+ user interviews, increasing team productivity by 20% and ensuring HIPAA compliance
                   </li>
                 </ul>
               </div>
             </section>
 
-            {/* Skills Section */}
+            {/* Technical Skills Section */}
             <section className="border-t portfolio-border pt-8 mb-16">
-              <h2 className="text-xl font-normal mb-8">Skills</h2>
+              <h2 className="text-xl font-normal mb-8">Technical Skills</h2>
               
               <div className="grid md:grid-cols-2 gap-12">
                 <div>
-                  <h3 className="text-base font-normal mb-4">Project Management</h3>
+                  <h3 className="text-base font-normal mb-4">Programming & Development</h3>
                   <ul className="space-y-2 text-sm">
-                    <li>• Budget Management & Forecasting</li>
-                    <li>• Timeline Development & Execution</li>
-                    <li>• Vendor & Contract Negotiation</li>
-                    <li>• On-Site Production Management</li>
+                    <li>• Python, Java, C++, SQL, React, Next.js, Vue.js, Django, Node.js, REST APIs</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="text-base font-normal mb-4">Strategic & Creative Oversight</h3>
+                  <h3 className="text-base font-normal mb-4">AI & Machine Learning</h3>
                   <ul className="space-y-2 text-sm">
-                    <li>• Creative Strategy Development</li>
-                    <li>• Talent Relations & Management</li>
-                    <li>• Creative Direction Oversight</li>
-                    <li>• Brand Alignment</li>
+                    <li>• Transformers, LLM Fine-tuning, RAG Systems, OpenAI API, Hugging Face, TensorFlow, PyTorch</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="text-base font-normal mb-4">Communication & Collaboration</h3>
+                  <h3 className="text-base font-normal mb-4">ML Operations & Evaluation</h3>
                   <ul className="space-y-2 text-sm">
-                    <li>• Cross-Functional Team Leadership</li>
-                    <li>• Client Relationship Management</li>
-                    <li>• Stakeholder Communication</li>
+                    <li>• RAGAS benchmarks, MLflow, Model Monitoring, A/B Testing</li>
                   </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-base font-normal mb-4">Design & Visualization</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Figma, Adobe Creative Suite, Sketch, D3.js, Matplotlib, Seaborn, D3.js Training</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-base font-normal mb-4">Infrastructure & DevOps</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Docker, Kubernetes, AWS/GCP, FastAPI, CI/CD pipelines, Redis, SageMaker</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Featured Projects Section */}
+            <section className="border-t portfolio-border pt-8 mb-16">
+              <h2 className="text-xl font-normal mb-8">Featured Projects</h2>
+              
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-base font-normal mb-2">F1 Monk - iOS Visa Assistant</h3>
+                  <p className="text-sm portfolio-text-muted mb-3">
+                    Comprehensive mobile application adopted by 200+ international students for visa compliance management. Integrated Google Cloud Dialogflow, xAI, and Grok API for natural language processing. Features automated deadline tracking, document management, and scheduling with 95% user satisfaction rating.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-base font-normal mb-2">Adaptive Prompt Engineering Framework</h3>
+                  <p className="text-sm portfolio-text-muted mb-3">
+                    Developed reinforcement learning-based system improving LLM performance by 25% through dynamic prompt optimization. Built modular architecture with TS-based generator and hybrid RL/GA optimizer. Deployed on AWS SageMaker with auto-scaling, reducing inference costs by 30% across 5+ production environments.
+                  </p>
                 </div>
               </div>
             </section>
@@ -203,50 +205,46 @@ export default function Portfolio() {
               <div className="grid md:grid-cols-2 gap-12">
                 <div>
                   <p className="text-base font-normal mb-2">
-                    University of California, Los Angeles (UCLA)
+                    University of Massachusetts Dartmouth
                   </p>
+                  <p className="text-sm portfolio-text-muted">May 2025</p>
                 </div>
                 <div>
                   <p className="text-base font-normal mb-1">
-                    Bachelor of Fine Arts in Graphic Design
+                    Master of Science in Computer Science
                   </p>
-                  <p className="text-sm portfolio-text-muted">Minor: Studio Photography</p>
+                  <p className="text-sm portfolio-text-muted">GPA: 3.5/4</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-12 mt-8">
+                <div>
+                  <p className="text-base font-normal mb-2">
+                    Meenakshi Sundararajan Engineering College
+                  </p>
+                  <p className="text-sm portfolio-text-muted">May 2021</p>
+                </div>
+                <div>
+                  <p className="text-base font-normal mb-1">
+                    Bachelor of Technology in Information Technology
+                  </p>
+                  <p className="text-sm portfolio-text-muted">GPA: 8.1/10</p>
                 </div>
               </div>
             </section>
 
-            {/* Recommendations Section */}
+            {/* Accomplishments Section */}
             <section className="border-t portfolio-border pt-8 mb-16">
-              <h2 className="text-xl font-normal mb-8">Recommendations</h2>
+              <h2 className="text-xl font-normal mb-8">Accomplishments</h2>
               
-              <div className="space-y-6">
-                <div>
-                  <p className="text-sm italic mb-2">
-                    "Alexandra brings sunshine to creative teams. Her optimism, problem-solving, 
-                    and clear communication drive success."
-                  </p>
-                  <p className="text-sm portfolio-text-muted">Client, Driftwell</p>
-                </div>
-                
-                <div>
-                  <p className="text-sm italic mb-2">
-                    "Alexandra is hungry to tackle new challenges. She's delightful with 
-                    clients and can diffuse a tense room with her laugh."
-                  </p>
-                  <p className="text-sm portfolio-text-muted">
-                    Creative Director, Creative Agency XYZ
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* Certifications Section */}
-            <section className="border-t portfolio-border pt-8 mb-16">
-              <h2 className="text-xl font-normal mb-8">Certifications</h2>
-              
-              <p className="text-sm">
-                Safe Sets International - COVID-19 Level Production Safety, 2020
-              </p>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  • Boosted user engagement by 30% as Social Media Chair for the Graduate Student Senate through creative campaigns
+                </li>
+                <li>
+                  • Mentored junior designers, improving team productivity and reducing project turnaround times by 20%
+                </li>
+              </ul>
             </section>
           </main>
       </div>
