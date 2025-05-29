@@ -76,6 +76,16 @@
     color: hsl(0 0% 80%);
     transition: color 0.2s ease;
   }
+
+  /* Hide scrollbars */
+  .scrollable-main {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  .scrollable-main::-webkit-scrollbar {
+    display: none; /* WebKit */
+  }
 }
 
 @keyframes fadeIn {
