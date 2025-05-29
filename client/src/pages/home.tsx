@@ -278,7 +278,7 @@ export default function Home() {
 
 
               {/* E-commerce Platform Project */}
-              <div className="animate-fade-in" style={{ animationDelay: '1.8s', animationFillMode: 'both' }}>
+              <div className="animate-fade-in" style={{ animationDelay: '1.4s', animationFillMode: 'both' }}>
                 <div className="mb-4">
                   <Link href="/projects/ecommerce-platform">
                     <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">E-commerce Platform & Mobile App Design</h3>
@@ -316,7 +316,7 @@ export default function Home() {
               </div>
 
               {/* The Pigeon App Project */}
-              <div className="animate-fade-in" style={{ animationDelay: '2s', animationFillMode: 'both' }}>
+              <div className="animate-fade-in" style={{ animationDelay: '1.6s', animationFillMode: 'both' }}>
                 <div className="mb-4">
                   <Link href="/projects/the-pigeon-app">
                     <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">The Pigeon - News App Design</h3>
