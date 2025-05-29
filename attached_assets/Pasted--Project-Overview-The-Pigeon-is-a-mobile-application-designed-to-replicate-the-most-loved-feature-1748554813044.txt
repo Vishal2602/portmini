@@ -1,0 +1,137 @@
+📌 Project Overview:
+The Pigeon is a mobile application designed to replicate the most loved features of a traditional newspaper within a clean, modern digital interface. The goal is to create an all-in-one app that keeps users informed, entertained, and connected—just like a physical newspaper—but with the convenience of a smartphone.
+
+🧠 Research & Insights:
+🔍 User Survey
+Users were asked: “What feature of a newspaper would you like to replicate into the app?”
+
+Top responses:
+
+Job Boards (25%)
+
+Crosswords (23.4%)
+
+Organized Content (13.4%)
+
+Credibility (12%)
+
+Technology News (11.2%)
+
+Extras, Comics (15% combined)
+
+This indicated strong demand for features that support both utility (job listings, credibility) and engagement (crosswords, comics).
+
+🧠 Brainstorming
+Ideas generated include:
+
+Job boards
+
+Daily comics
+
+Widgets
+
+Live updates
+
+Weekly summaries
+
+Promotions & discounts
+
+Instant news and credibility
+
+These shaped the initial feature ideation to cover both information dissemination and user engagement.
+
+⚔️ Competitive Analysis
+The Pigeon stands out because:
+
+It offers all key features—Free access, Live News, Crosswords, Job Boards, and Hashtags.
+
+Competitors like The Hindu, TOI, BBC, etc., lack this combination.
+
+This gap validated the opportunity for a well-rounded, newspaper-replacement app.
+
+👤 Persona
+Sarah Cooper, 28, Businesswoman – New York, NY
+
+Frustrations: Can’t access the newspaper on-the-go, forgets saved articles.
+
+Goals: Stay updated, access anywhere, trust credible sources.
+
+Personality: Workaholic, Energetic, Ambitious
+
+Sarah represents the modern reader—busy, mobile-first, craving structure and accuracy.
+
+🎬 Storyboard
+Sarah forgets her newspaper.
+
+Her friend introduces her to The Pigeon app.
+
+She explores features like crosswords and live updates.
+
+Falls in love with its functionality and ease of use.
+
+The story highlights the problem-solution dynamic clearly and emotionally.
+
+📈 Problem – Solution – Goals
+🔻 Problems:
+News apps don’t replicate the full newspaper experience.
+
+Interfaces are outdated and cluttered.
+
+✅ Solutions:
+Bring beloved newspaper features into the app.
+
+Deliver a decluttered, modern UI/UX.
+
+🎯 Goals:
+Provide newspaper features in one app.
+
+Save paper/environment.
+
+Empower users to say “Yes, I do read the news.”
+
+🗺️ User Flow
+Main flow includes:
+
+Splash → Onboarding → Sign In/Up → Nav
+
+From Nav: Home, Search, Explore (Job Boards, Misc, Magazine), Saved, Trending
+
+The structure is intuitive, helping users discover content seamlessly.
+
+🎨 Design System
+Typography: Helvetica Neue
+
+Primary Colors:
+
+White #FFFFFF
+
+Black #000000
+
+Orange #FF4823
+
+The clean visual style supports a minimal, bold, and trustworthy aesthetic.
+
+🧱 Design Process
+Research – Surveys & competitor analysis
+
+Brainstorm – Feature ideation
+
+Define – Problems, solutions, and goals
+
+Wireframe – Structure of the app
+
+Prototype – High-fidelity visuals & interactions
+
+🧩 Final Product Snapshot
+The Pigeon app interface shown includes:
+
+Top navigation for topics (India, Sports, Entertainment)
+
+Post previews with hashtags, interactions (like, share, read more)
+
+Bottom nav for Home, Explore, Job Boards, and Search
+
+This makes the app feel familiar yet powerful—modernizing the newspaper for today’s digital lifestyle.
+
+🌟 Summary:
+The Pigeon is a thoughtful, research-driven mobile application that fills a market gap by blending utility (jobs, credibility) with engagement (crosswords, comics), all while offering a sleek, clean experience. It truly brings the newspaper into the pocket of the modern user.

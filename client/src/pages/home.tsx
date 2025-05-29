@@ -386,6 +386,44 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* The Pigeon App Project */}
+              <div className="animate-fade-in" style={{ animationDelay: '2s', animationFillMode: 'both' }}>
+                <div className="mb-4">
+                  <Link href="/projects/the-pigeon-app">
+                    <h3 className="text-2xl font-normal mb-2 portfolio-hover cursor-pointer">The Pigeon - News App Design</h3>
+                  </Link>
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Mobile App Design</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">User Research</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">News Platform</span>
+                    <span className="px-3 py-1 bg-gray-800 rounded-full text-xs">Content Strategy</span>
+                  </div>
+                </div>
+                <p className="text-base portfolio-text-muted mb-6 leading-relaxed">
+                  Research-driven mobile news application that replicates beloved newspaper features within a modern digital interface. Comprehensive UX methodology from user surveys through competitive analysis, persona development, and iterative design processes, creating an all-in-one platform for news, jobs, crosswords, and entertainment.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <h4 className="font-medium mb-2">Research Excellence</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• Comprehensive user surveys and analysis</li>
+                      <li>• Competitive market gap identification</li>
+                      <li>• User persona development and journey mapping</li>
+                      <li>• Five-phase design methodology</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">Innovation Focus</h4>
+                    <ul className="space-y-1 portfolio-text-muted">
+                      <li>• Traditional newspaper features modernized</li>
+                      <li>• Clean, trustworthy interface design</li>
+                      <li>• Comprehensive content organization</li>
+                      <li>• Mobile-first user experience</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
