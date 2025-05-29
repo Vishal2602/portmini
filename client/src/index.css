@@ -162,3 +162,34 @@
 .animate-slide-in-right {
   animation: slideInRight 0.8s ease-out;
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient shapes */
+.star-shape {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.triangle-gradient {
+  background: linear-gradient(135deg, #ff6b9d, #ff8a65, #9c27b0);
+}
+
+.flower-shape {
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 85% 65%, 75% 100%, 50% 85%, 25% 100%, 15% 65%, 0% 35%, 20% 10%);
+}
+
+.blob-shape {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}

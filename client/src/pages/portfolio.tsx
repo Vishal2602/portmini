@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FeedbackWidget from "@/components/FeedbackWidget";
+import GradientSymbols from "@/components/GradientSymbols";
 
 export default function Portfolio() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -331,6 +332,9 @@ export default function Portfolio() {
           </button>
         </div>
       </footer>
+
+      {/* Gradient Symbols */}
+      <GradientSymbols />
 
       {/* Feedback Widget */}
       <FeedbackWidget />
