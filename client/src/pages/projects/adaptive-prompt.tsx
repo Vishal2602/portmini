@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import FeedbackWidget from "@/components/FeedbackWidget";
 import GradientSymbols from "@/components/GradientSymbols";
 
 export default function AdaptivePromptProject() {
@@ -365,23 +364,7 @@ endpoint_config = {
         </main>
       </div>
 
-      {/* Footer */}
-      <footer className="px-6 lg:px-8 py-12">
-        <div className="max-w-7xl mx-auto border-t portfolio-border pt-8 flex justify-between items-center">
-          <div>
-            <h3 className="text-xl font-normal mb-4">Contact me</h3>
-          </div>
-          <button 
-            onClick={scrollToTop}
-            className="text-sm portfolio-hover cursor-pointer"
-          >
-            Top ↑
-          </button>
-        </div>
-      </footer>
 
-      {/* Feedback Widget */}
-      <FeedbackWidget />
     </div>
   );
 }
