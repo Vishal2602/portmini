@@ -75,10 +75,10 @@ export default function Portfolio() {
 
   return (
     <div className={`min-h-screen bg-black text-white transition-all duration-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-      {/* Decorative Gradient Symbols - Large Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-32 overflow-hidden pointer-events-none">
+      {/* Decorative Gradient Symbols - Horizontal Line */}
+      <div className="absolute top-16 left-1/2 transform -translate-x-1/2 flex space-x-8 lg:space-x-12 pointer-events-none z-0">
         {/* Star Shape */}
-        <svg className="absolute top-4 right-80 w-16 h-16 lg:w-20 lg:h-20 animate-pulse opacity-70" style={{ animationDelay: '0.5s' }} viewBox="0 0 100 100">
+        <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-80" style={{ animationDelay: '0.5s' }} viewBox="0 0 100 100">
           <defs>
             <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#ff6b9d" />
@@ -90,7 +90,7 @@ export default function Portfolio() {
         </svg>
 
         {/* Triangle Shape */}
-        <svg className="absolute top-6 right-64 w-14 h-14 lg:w-18 lg:h-18 animate-pulse opacity-70" style={{ animationDelay: '1s' }} viewBox="0 0 100 100">
+        <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-80" style={{ animationDelay: '1s' }} viewBox="0 0 100 100">
           <defs>
             <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#ff6b9d" />
@@ -102,7 +102,7 @@ export default function Portfolio() {
         </svg>
 
         {/* Flower/Petal Shape */}
-        <svg className="absolute top-2 right-48 w-16 h-16 lg:w-20 lg:h-20 animate-pulse opacity-70" style={{ animationDelay: '1.5s' }} viewBox="0 0 100 100">
+        <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-80" style={{ animationDelay: '1.5s' }} viewBox="0 0 100 100">
           <defs>
             <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#ff6b9d" />
@@ -119,7 +119,7 @@ export default function Portfolio() {
         </svg>
 
         {/* Wave/Blob Shape */}
-        <svg className="absolute top-8 right-32 w-18 h-14 lg:w-22 lg:h-16 animate-pulse opacity-70" style={{ animationDelay: '2s' }} viewBox="0 0 100 100">
+        <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-80" style={{ animationDelay: '2s' }} viewBox="0 0 100 100">
           <defs>
             <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#ffd93d" />
@@ -131,7 +131,7 @@ export default function Portfolio() {
         </svg>
 
         {/* Circular/Split Shape */}
-        <svg className="absolute top-4 right-16 w-16 h-16 lg:w-20 lg:h-20 animate-pulse opacity-70" style={{ animationDelay: '2.5s' }} viewBox="0 0 100 100">
+        <svg className="w-12 h-12 lg:w-16 lg:h-16 animate-pulse opacity-80" style={{ animationDelay: '2.5s' }} viewBox="0 0 100 100">
           <defs>
             <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#ffd93d" />
