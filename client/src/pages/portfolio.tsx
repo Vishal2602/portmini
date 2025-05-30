@@ -123,10 +123,10 @@ export default function Portfolio() {
               </p>
               <p className="animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
                 <a 
-                  href="tel:+14254786332" 
+                  href="tel:+14254786132" 
                   className="portfolio-text-muted portfolio-hover"
                 >
-                  425-478-6332
+                  425-478-6132
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
