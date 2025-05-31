@@ -237,7 +237,7 @@ export default function F1MonkProject() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6916.PNG" 
+                  src="/attached_assets/IMG_6916 Medium.png" 
                   alt="F1 Monk Home Screen"
                   className="w-full rounded-lg border border-gray-800"
                 />
@@ -246,7 +246,7 @@ export default function F1MonkProject() {
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6921.PNG" 
+                  src="/attached_assets/IMG_6920 Medium.png" 
                   alt="F1 Monk Timeline View"
                   className="w-full rounded-lg border border-gray-800"
                 />
@@ -255,7 +255,7 @@ export default function F1MonkProject() {
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6922.PNG" 
+                  src="/attached_assets/IMG_6922 Medium.png" 
                   alt="F1 Monk Alerts System"
                   className="w-full rounded-lg border border-gray-800"
                 />
@@ -298,7 +298,7 @@ export default function F1MonkProject() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6923.PNG" 
+                  src="/attached_assets/IMG_6923 Medium.png" 
                   alt="Important Alerts View"
                   className="w-full rounded-lg border border-gray-800"
                 />
@@ -307,7 +307,7 @@ export default function F1MonkProject() {
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6925.PNG" 
+                  src="/attached_assets/IMG_6925 Medium.png" 
                   alt="Profile and Help Section"
                   className="w-full rounded-lg border border-gray-800"
                 />
