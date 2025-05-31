@@ -68,6 +68,26 @@ netlify deploy --prod
 - Uses `netlify.toml` for configuration
 - Automatic builds from Git
 - Set environment variables in Netlify dashboard
+- Uses serverless functions for API endpoints
+
+**Important Notes for Netlify:**
+- The build command is `npm run build:netlify` (client-only build)
+- API endpoints are handled by Netlify Functions in `netlify/functions/`
+- No database required for basic portfolio functionality
+- Static site with serverless API functions
+
+**Troubleshooting Netlify Deployment:**
+1. **"vite: not found" error**: 
+   - Ensure `npm ci` is in the build command
+   - Check that devDependencies are being installed
+   
+2. **Function errors**:
+   - Check function logs in Netlify dashboard
+   - Ensure functions are in `netlify/functions/` directory
+   
+3. **Build failures**:
+   - Use `npm run build:netlify` instead of `npm run build`
+   - Check Node.js version is set to 18 in `netlify.toml`
 
 ### 3. Railway
 

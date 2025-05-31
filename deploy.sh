@@ -70,6 +70,9 @@ case "${1:-local}" in
     "netlify")
         echo "🌐 Deploying to Netlify..."
         if command -v netlify &> /dev/null; then
+            # Use Netlify-specific build for deployment
+            echo "🏗️  Building for Netlify..."
+            npm run build:netlify
             netlify deploy --prod
         else
             echo "❌ Netlify CLI not found. Install with: npm i -g netlify-cli"
