@@ -102,7 +102,7 @@ export default function ThePigeonAppProject() {
               </p>
               <p className="animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'both' }}>
                 <a 
-                  href="https://linkedin.com/in/vishal2602" 
+                  href="https://www.linkedin.com/in/vishals2602/" 
                   className="portfolio-text-muted portfolio-hover"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -113,10 +113,12 @@ export default function ThePigeonAppProject() {
               </p>
               <p className="animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
                 <a 
-                  href="#" 
+                  href="https://github.com/Vishal2602" 
                   className="portfolio-text-muted portfolio-hover"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  designport.netlify.app
+                  GitHub
                 </a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
