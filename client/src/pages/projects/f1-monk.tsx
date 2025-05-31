@@ -153,21 +153,204 @@ export default function F1MonkProject() {
           <section className="mb-16">
             <h2 className="text-2xl font-normal mb-6">Overview</h2>
             <p className="text-lg leading-relaxed mb-6">
-              F1 Monk is a comprehensive mobile application designed to revolutionize visa compliance management for international students. Built from the ground up with AI-powered features, the app serves as a digital assistant that helps students navigate the complex world of visa requirements, deadlines, and documentation.
+              F1 Monk is a comprehensive iOS application designed to provide wisdom and personalized guidance to international students navigating the complexities of the F1 visa process. It combines sleek design with smart development to create a seamless experience for users who need timely alerts, answers, and document tracking related to their visa journey.
             </p>
-            <p className="text-base portfolio-text-muted leading-relaxed">
-              The application has been adopted by over 200 international students and maintains an impressive 95% user satisfaction rating. By integrating cutting-edge AI technologies including Google Cloud Dialogflow, xAI, and Grok API, F1 Monk provides intelligent, contextual assistance that adapts to each user's unique situation.
+            <p className="text-base portfolio-text-muted leading-relaxed mb-6">
+              The application integrates cutting-edge AI technologies including Google Cloud Dialogflow, xAI, and Grok API to provide intelligent, context-aware assistance that adapts to each user's unique situation.
             </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 text-sm">
+              <div>
+                <h3 className="font-medium mb-2">Platform</h3>
+                <p className="portfolio-text-muted">iOS (SwiftUI)</p>
+              </div>
+              <div>
+                <h3 className="font-medium mb-2">Architecture</h3>
+                <p className="portfolio-text-muted">MVVM with Combine</p>
+              </div>
+              <div>
+                <h3 className="font-medium mb-2">Duration</h3>
+                <p className="portfolio-text-muted">6 months development</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Problem Statement */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-normal mb-6">Problem Statement</h2>
+            <div className="bg-red-900/20 p-6 rounded mb-6">
+              <p className="text-base portfolio-text-muted leading-relaxed italic">
+                "International students often face confusion around visa deadlines, legal documentation, and university compliance due to scattered information and lack of real-time personalized guidance."
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-normal mb-4">Key Challenges</h3>
+                <ul className="space-y-3 text-sm portfolio-text-muted">
+                  <li>• Scattered information across multiple sources</li>
+                  <li>• Missing critical visa deadlines</li>
+                  <li>• Complex legal documentation requirements</li>
+                  <li>• Lack of personalized guidance</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-normal mb-4">Target Audience</h3>
+                <ul className="space-y-3 text-sm portfolio-text-muted">
+                  <li>• International students on F1 visa</li>
+                  <li>• Students navigating OPT, CPT, I-20 updates</li>
+                  <li>• Users needing mobile-first compliance solutions</li>
+                  <li>• Students managing tax filing requirements</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Key Features */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-normal mb-6">Key Features</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-normal mb-4">AI-Powered Features</h3>
+                <ul className="space-y-3 text-sm portfolio-text-muted">
+                  <li>• <strong>AI Chat Assistant:</strong> Context-aware Q&A using xAI/Grok API and Dialogflow</li>
+                  <li>• <strong>Personalized Timeline:</strong> Dynamic scheduling and reminders for key milestones</li>
+                  <li>• <strong>Smart Notifications:</strong> Intelligent alerts sorted by importance</li>
+                  <li>• <strong>Profile System:</strong> Store academic and visa details for custom alerts</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-normal mb-4">Core Functionality</h3>
+                <ul className="space-y-3 text-sm portfolio-text-muted">
+                  <li>• <strong>Help Center:</strong> Easy access to support and government resources</li>
+                  <li>• <strong>Advisor Appointments:</strong> In-app scheduling for academic, visa, and career help</li>
+                  <li>• <strong>Document Tracking:</strong> Monitor important visa document statuses</li>
+                  <li>• <strong>Deadline Management:</strong> Never miss critical submission dates</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* App Screenshots */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-normal mb-6">App Interface</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="space-y-4">
+                <img 
+                  src="/attached_assets/IMG_6916.PNG" 
+                  alt="F1 Monk Home Screen"
+                  className="w-full rounded-lg border border-gray-800"
+                />
+                <h3 className="text-sm font-medium">Home Dashboard</h3>
+                <p className="text-xs portfolio-text-muted">Daily events summary with personalized greetings and quick access to timeline</p>
+              </div>
+              <div className="space-y-4">
+                <img 
+                  src="/attached_assets/IMG_6921.PNG" 
+                  alt="F1 Monk Timeline View"
+                  className="w-full rounded-lg border border-gray-800"
+                />
+                <h3 className="text-sm font-medium">Smart Timeline</h3>
+                <p className="text-xs portfolio-text-muted">Color-coded events with completion tracking and deadline management</p>
+              </div>
+              <div className="space-y-4">
+                <img 
+                  src="/attached_assets/IMG_6922.PNG" 
+                  alt="F1 Monk Alerts System"
+                  className="w-full rounded-lg border border-gray-800"
+                />
+                <h3 className="text-sm font-medium">Intelligent Alerts</h3>
+                <p className="text-xs portfolio-text-muted">Priority-based notification system with categorized alerts</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Technical Implementation */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-normal mb-6">Technical Implementation</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-normal mb-4">Tech Stack</h3>
+                <ul className="space-y-2 text-sm portfolio-text-muted">
+                  <li>• <strong>Frontend:</strong> SwiftUI for modular, declarative UI</li>
+                  <li>• <strong>Architecture:</strong> MVVM (Model-View-ViewModel)</li>
+                  <li>• <strong>State Management:</strong> Combine framework</li>
+                  <li>• <strong>AI Integration:</strong> xAI/Grok + Google Dialogflow</li>
+                  <li>• <strong>Networking:</strong> URLSession for API requests</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-normal mb-4">Design Strategy</h3>
+                <ul className="space-y-2 text-sm portfolio-text-muted">
+                  <li>• <strong>Dark Theme UI:</strong> Low-stress readability design</li>
+                  <li>• <strong>Accent Colors:</strong> Blue and red for urgency indicators</li>
+                  <li>• <strong>Typography:</strong> Rounded sans-serif for clarity</li>
+                  <li>• <strong>Navigation:</strong> Bottom tab with five core sections</li>
+                  <li>• <strong>Iconography:</strong> SF Symbols for consistency</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Navigation Screens */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-normal mb-6">App Navigation</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <img 
+                  src="/attached_assets/IMG_6923.PNG" 
+                  alt="Important Alerts View"
+                  className="w-full rounded-lg border border-gray-800"
+                />
+                <h3 className="text-sm font-medium">Critical Notifications</h3>
+                <p className="text-xs portfolio-text-muted">High-priority alerts with immediate action items like OPT deadlines</p>
+              </div>
+              <div className="space-y-4">
+                <img 
+                  src="/attached_assets/IMG_6925.PNG" 
+                  alt="Profile and Help Section"
+                  className="w-full rounded-lg border border-gray-800"
+                />
+                <h3 className="text-sm font-medium">Profile & Resources</h3>
+                <p className="text-xs portfolio-text-muted">User profile management with quick access to visa resources and DSO contact</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Architecture & Development */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-normal mb-6">Architecture & Development</h2>
+            <div className="bg-gray-900/50 p-6 rounded">
+              <h3 className="text-lg font-normal mb-4">Architecture Breakdown</h3>
+              <div className="grid md:grid-cols-4 gap-6 text-sm">
+                <div>
+                  <h4 className="font-medium mb-2">Models</h4>
+                  <p className="portfolio-text-muted">Data structures for alerts, timeline events, and user profiles</p>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2">Views</h4>
+                  <p className="portfolio-text-muted">UI components like notification cards, timeline scroll views</p>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2">ViewModels</h4>
+                  <p className="portfolio-text-muted">Logic for managing state, sorting alerts, toggling read status</p>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2">Services</h4>
+                  <p className="portfolio-text-muted">AI Chat integration, Authentication, Push Notifications</p>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Problem & Solution */}
           <section className="mb-16">
-            <h2 className="text-2xl font-normal mb-6">Problem & Solution</h2>
+            <h2 className="text-2xl font-normal mb-6">Solution Approach</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-lg font-normal mb-4 text-red-400">The Problem</h3>
+                <h3 className="text-lg font-normal mb-4 text-green-400">Our Solution</h3>
                 <ul className="space-y-3 text-sm portfolio-text-muted">
-                  <li>• International students face complex visa compliance requirements</li>
+                  <li>• Centralized F1-related knowledge and reminders</li>
                   <li>• Critical deadlines are often missed due to poor tracking systems</li>
                   <li>• Document management across multiple platforms is fragmented</li>
                   <li>• Language barriers make compliance information difficult to understand</li>

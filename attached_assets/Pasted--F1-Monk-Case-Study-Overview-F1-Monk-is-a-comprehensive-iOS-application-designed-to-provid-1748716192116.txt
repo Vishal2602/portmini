@@ -1,0 +1,148 @@
+# F1 Monk Case Study
+
+## Overview
+
+**F1 Monk** is a comprehensive iOS application designed to provide wisdom and personalized guidance to international students navigating the complexities of the F1 visa process. It combines sleek design with smart development to create a seamless experience for users who need timely alerts, answers, and document tracking related to their visa journey.
+
+---
+
+## Problem Statement
+
+International students often face confusion around visa deadlines, legal documentation, and university compliance due to scattered information and lack of real-time personalized guidance.
+
+> "To make an app to help people relax, sleep, reduce stress and anxiety..."
+
+The app should:
+
+* Provide accurate information on F1 processes
+* Track important milestones
+* Be easy and intuitive to use
+* Deliver notifications about critical deadlines
+
+---
+
+## Target Audience
+
+* International students in the U.S. on an F1 visa
+* Students navigating OPT, CPT, I-20 updates, and tax filing
+* Users who need a mobile-first approach to compliance
+
+---
+
+## Goals
+
+* Centralized F1-related knowledge and reminders
+* Eliminate missed deadlines and confusion
+* Provide reliable chat-based support with an intelligent assistant
+
+---
+
+## Key Features
+
+* **AI-Powered Chat Assistant:** Context-aware Q\&A for personalized visa queries using xAI/Grok API and Dialogflow
+* **Personalized Timeline:** Dynamic scheduling and reminders for key milestones like OPT filing or I-20 renewal
+* **Alerts & Notifications:** Sorted by importance (Important/Normal/All)
+* **Help Center:** Easy access to support and government resources
+* **Profile System:** Store academic and visa details for custom alerts
+* **Advisor Appointments:** In-app scheduling for academic, visa, and career help
+
+---
+
+## Design Strategy
+
+### Visual Language
+
+* **Dark Theme UI** for low-stress readability
+* **Accent Colors:** Bright blue and red to indicate urgency and interactions
+* **Typography:** Rounded sans-serif fonts for clarity and friendliness
+* **Iconography:** SF Symbols with consistent line weight for modern feel
+
+### Layout & Navigation
+
+* **Bottom Tab Navigation** with five core sections:
+
+  * Home
+  * Chat
+  * Timeline
+  * Alerts
+  * Profile
+
+### Interaction Design
+
+* **Microinteractions:** Color-coded alert badges and toggles for read/unread states
+* **Progressive Disclosure:** Only relevant options are shown to the user based on the current step in their journey
+* **Responsive Design:** All views scale comfortably across iPhone screens, built using SwiftUI's adaptive layout engine
+
+---
+
+## Development Details
+
+### Tech Stack
+
+* **Frontend:** SwiftUI for modular, declarative UI
+* **Architecture:** MVVM (Model-View-ViewModel)
+* **State Management:** Combine
+* **AI Integration:** xAI/Grok + Google Dialogflow
+* **Networking:** URLSession for API requests
+
+### Architecture Breakdown
+
+* **Models:** Data structures for alerts, timeline events, and user profiles
+* **Views:** UI components like notification cards, timeline scroll, etc.
+* **ViewModels:** Logic for managing state (e.g., sorting alerts, toggling read)
+* **Services:** AI Chat, Authentication, Notifications
+
+---
+
+## Screens
+
+* **Home View:** Daily events summary, advisor booking, highlights
+* **Chat:** Ask visa questions, get instant smart answers
+* **Timeline View:** Upcoming dates with color-coded events (green, red, blue)
+* **Alerts:** Important reminders sorted by priority
+* **Profile View:** Sign in to save progress and get custom reminders
+
+---
+
+## Setup & Installation
+
+```bash
+git clone https://github.com/yourusername/F1Monk.git
+cd F1Monk
+cp .env.example .env
+```
+
+Edit `.env` with:
+
+* xAI/Grok API Key
+* Google Cloud Project ID & Dialogflow credentials
+* Database config (optional)
+
+Then:
+
+* Open `ios_f1_helper.xcodeproj` in Xcode
+* Run on simulator or device
+
+---
+
+## Contribution Guide
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit: `git commit -m 'Add amazing feature'`
+4. Push: `git push origin feature/amazing-feature`
+5. Open a pull request
+
+---
+
+## License
+
+Apache License 2.0
+
+---
+
+## Acknowledgments
+
+* International student advisors
+* Apple Human Interface Guidelines
+* SF Symbols for iconography
