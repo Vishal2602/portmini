@@ -81,7 +81,6 @@ export default function Home() {
         <h1 className="text-xl font-normal">Vishal Sunil Kumar</h1>
         <p className="text-sm portfolio-text-muted">AI Engineer & UX Designer</p>
       </div>
-
       {/* Desktop Header */}
       <header className="hidden md:flex justify-between items-start p-6 lg:p-8 animate-slide-down">
         <div>
@@ -99,7 +98,6 @@ export default function Home() {
           </Link>
         </nav>
       </header>
-
       <div className="flex flex-col md:flex-row h-auto md:h-[calc(100vh-120px)]">
         {/* Left Sidebar - Full width on mobile, sidebar on desktop */}
         <aside className="w-full md:w-1/3 lg:w-1/3 xl:w-1/4 px-4 md:px-6 lg:px-8 flex-shrink-0 animate-slide-in-left">
@@ -142,9 +140,7 @@ export default function Home() {
                 <a 
                   href="#" 
                   className="portfolio-text-muted portfolio-hover"
-                >
-                  designport.netlify.app
-                </a>
+                >github.com/Vishal2602</a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
             </div>
@@ -369,8 +365,6 @@ export default function Home() {
           </section>
         </main>
       </div>
-
-
     </div>
   );
 }
