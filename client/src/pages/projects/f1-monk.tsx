@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import GradientSymbols from "@/components/GradientSymbols";
+import homeScreenImage from "@assets/iPhone 15 Pro White Titanium.png";
+import timelineImage from "@assets/iPhone 15 Pro White Titanium-6.png";
+import alertsImage from "@assets/iPhone 15 Pro White Titanium-4.png";
+import criticalAlertsImage from "@assets/iPhone 15 Pro White Titanium-3.png";
+import profileImage from "@assets/iPhone 15 Pro White Titanium-2.png";
 
 export default function F1MonkProject() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -237,7 +242,7 @@ export default function F1MonkProject() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/iPhone 15 Pro White Titanium.png" 
+                  src={homeScreenImage} 
                   alt="F1 Monk Home Screen"
                   className="w-full max-w-xs mx-auto"
                 />
@@ -246,7 +251,7 @@ export default function F1MonkProject() {
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/iPhone 15 Pro White Titanium-6.png" 
+                  src={timelineImage} 
                   alt="F1 Monk Timeline View"
                   className="w-full max-w-xs mx-auto"
                 />
@@ -255,7 +260,7 @@ export default function F1MonkProject() {
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/iPhone 15 Pro White Titanium-4.png" 
+                  src={alertsImage} 
                   alt="F1 Monk Alerts System"
                   className="w-full max-w-xs mx-auto"
                 />
@@ -298,7 +303,7 @@ export default function F1MonkProject() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/iPhone 15 Pro White Titanium-3.png" 
+                  src={criticalAlertsImage} 
                   alt="Important Alerts View"
                   className="w-full max-w-xs mx-auto"
                 />
@@ -307,7 +312,7 @@ export default function F1MonkProject() {
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/iPhone 15 Pro White Titanium-2.png" 
+                  src={profileImage} 
                   alt="Profile and Help Section"
                   className="w-full max-w-xs mx-auto"
                 />
