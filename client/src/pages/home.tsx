@@ -167,9 +167,7 @@ export default function Home() {
           {/* Hello Section */}
           <section className="border-t portfolio-border pt-8 mb-16 animate-slide-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-6 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-                Hello! 👋
-              </h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-6 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>Hello! </h2>
               <p className="text-lg md:text-xl lg:text-2xl max-w-4xl leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
                 I'm a passionate AI Engineer and UX Designer who bridges the gap between cutting-edge technology and human-centered design. I specialize in building intelligent systems that not only work flawlessly but also provide delightful user experiences.
               </p>
