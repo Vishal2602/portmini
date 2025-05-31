@@ -15,7 +15,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Express
 
 - Node.js 18+ 
 - npm 8+
-- PostgreSQL database (for production)
+- PostgreSQL database (optional - only needed for user authentication features)
 
 ## 🛠️ Development Setup
 
@@ -37,9 +37,12 @@ A modern, responsive portfolio website built with React, TypeScript, and Express
    
    Update `.env` with your configuration:
    ```env
-   DATABASE_URL=postgresql://username:password@localhost:5432/portfolio_db
+   # Required
    PORT=3000
    NODE_ENV=development
+   
+   # Optional (only if you need database features)
+   # DATABASE_URL=postgresql://username:password@localhost:5432/portfolio_db
    ```
 
 4. **Start development server**
@@ -203,10 +206,10 @@ A modern, responsive portfolio website built with React, TypeScript, and Express
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `DATABASE_URL` | PostgreSQL connection string | Yes (Production) |
+| `DATABASE_URL` | PostgreSQL connection string | No (only for user features) |
 | `PORT` | Server port | No (default: 3000) |
 | `NODE_ENV` | Environment mode | No (default: development) |
-| `SESSION_SECRET` | Session encryption secret | Recommended |
+| `SESSION_SECRET` | Session encryption secret | No (only if using sessions) |
 
 ## 🚀 Performance Optimizations
 

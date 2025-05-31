@@ -44,7 +44,7 @@ export class DatabaseStorage implements IStorage {
 
   constructor() {
     if (!process.env.DATABASE_URL) {
-      throw new Error("DATABASE_URL environment variable is required");
+      throw new Error("DATABASE_URL environment variable is required for DatabaseStorage");
     }
     
     const sql = neon(process.env.DATABASE_URL);
@@ -81,7 +81,8 @@ export class DatabaseStorage implements IStorage {
   }
 }
 
-// Use database storage in production, memory storage in development
-export const storage = process.env.NODE_ENV === "production" 
+// Use database storage only if DATABASE_URL is provided, otherwise use memory storage
+// This allows the portfolio to work without a database for simple deployments
+export const storage = process.env.DATABASE_URL 
   ? new DatabaseStorage() 
   : new MemStorage();

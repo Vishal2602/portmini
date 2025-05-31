@@ -6,8 +6,8 @@ This document provides comprehensive instructions for deploying your Personal Po
 
 - [ ] Node.js 18+ installed
 - [ ] All dependencies installed (`npm install`)
-- [ ] Environment variables configured
-- [ ] Database setup (for production)
+- [ ] Environment variables configured (PORT, NODE_ENV)
+- [ ] Database setup (optional - only if you need user features)
 - [ ] Build process tested (`npm run build`)
 
 ## 🔧 Environment Variables
@@ -15,10 +15,12 @@ This document provides comprehensive instructions for deploying your Personal Po
 Create a `.env` file based on `env.example`:
 
 ```env
-# Required for production
-DATABASE_URL=postgresql://username:password@host:5432/database
-NODE_ENV=production
+# Required
 PORT=3000
+NODE_ENV=production
+
+# Optional (only if you need database features)
+# DATABASE_URL=postgresql://username:password@host:5432/database
 
 # Optional
 SESSION_SECRET=your-secure-session-secret
@@ -237,15 +239,15 @@ curl https://your-domain.com/api/health
    npm run build
    ```
 
-2. **Database Connection Issues**
+2. **Database Connection Issues (if using database)**
    - Verify `DATABASE_URL` format
    - Check database server accessibility
    - Ensure database exists
 
 3. **Environment Variables**
-   - Verify all required variables are set
+   - Verify required variables are set (PORT, NODE_ENV)
    - Check for typos in variable names
-   - Ensure production values are different from development
+   - Database is optional for basic portfolio functionality
 
 4. **Port Issues**
    - Application uses port 3000 by default
@@ -257,11 +259,7 @@ curl https://your-domain.com/api/health
    - Gzip compression is enabled by default
    - Static assets are optimized during build
 
-2. **Database Optimization**
-   - Use connection pooling in production
-   - Consider read replicas for high traffic
-
-3. **CDN Setup**
+2. **CDN Setup**
    - Most platforms provide CDN automatically
    - Consider separate CDN for static assets
 
@@ -272,7 +270,6 @@ curl https://your-domain.com/api/health
 1. **Vercel Analytics** (for Vercel deployments)
 2. **Netlify Analytics** (for Netlify deployments)
 3. **Sentry** (for error tracking)
-4. **LogRocket** (for user session recording)
 
 ### Health Check Monitoring
 
@@ -285,18 +282,11 @@ Set up monitoring for:
 
 1. **Environment Variables**
    - Never commit `.env` files
-   - Use strong, unique secrets
-   - Rotate secrets regularly
+   - Use strong, unique secrets (if needed)
 
-2. **Database Security**
-   - Use SSL connections
-   - Implement proper access controls
-   - Regular security updates
-
-3. **Application Security**
+2. **Application Security**
    - HTTPS enforced in production
    - Security headers configured
-   - Input validation with Zod
 
 ## 📈 Scaling
 
@@ -304,19 +294,14 @@ Set up monitoring for:
 - Most platforms auto-scale
 - Consider load balancers for high traffic
 
-### Database Scaling
-- Connection pooling
-- Read replicas
-- Database sharding (for very high traffic)
-
 ---
 
 ## 🎉 Quick Start Commands
 
 ```bash
-# 1. Setup
+# 1. Setup (minimal - no database needed)
 cp env.example .env
-# Edit .env with your values
+# Edit .env with PORT and NODE_ENV only
 
 # 2. Install and build
 npm ci
@@ -333,4 +318,4 @@ npm run build
 curl https://your-domain.com/api/health
 ```
 
-For questions or issues, check the main README.md or create an issue in the repository. 
+For questions or issues, check the main README.md or create an issue in the repository.
