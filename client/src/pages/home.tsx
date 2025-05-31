@@ -140,7 +140,9 @@ export default function Home() {
                 <a 
                   href="#" 
                   className="portfolio-text-muted portfolio-hover"
-                >github.com/Vishal2602</a>
+                >Github
+
+</a>
                 <span className="portfolio-text-muted"> ↗</span>
               </p>
             </div>
