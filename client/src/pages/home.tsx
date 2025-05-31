@@ -219,26 +219,7 @@ export default function Home() {
                 <p className="text-sm md:text-base portfolio-text-muted mb-6 leading-relaxed">
                   A comprehensive mobile application that revolutionizes visa compliance management for international students. Adopted by 200+ students, the app integrates Google Cloud Dialogflow, xAI, and Grok API for intelligent natural language processing. Features include automated deadline tracking, document management, and intelligent scheduling—all achieving a 95% user satisfaction rating.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-sm">
-                  <div>
-                    <h4 className="font-medium mb-2">Key Features</h4>
-                    <ul className="space-y-1 portfolio-text-muted">
-                      <li>• Smart deadline notifications</li>
-                      <li>• Document status tracking</li>
-                      <li>• AI-powered compliance checking</li>
-                      <li>• Multilingual support</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-medium mb-2">Impact</h4>
-                    <ul className="space-y-1 portfolio-text-muted">
-                      <li>• 200+ active users</li>
-                      <li>• 95% satisfaction rating</li>
-                      <li>• 80% reduction in compliance errors</li>
-                      <li>• Featured in university newsletter</li>
-                    </ul>
-                  </div>
-                </div>
+
               </div>
               
               {/* Adaptive Prompt Engineering Project */}
