@@ -80,8 +80,9 @@ netlify deploy --prod
 
 **Troubleshooting Netlify Deployment:**
 1. **"vite: not found" error**: 
-   - Ensure `npm ci` is in the build command
-   - Check that devDependencies are being installed
+   - Build command uses `npm ci --include=dev` to install dev dependencies
+   - Ensure `netlify.toml` has the correct build command
+   - Vite is in devDependencies and needs to be installed for build
    
 2. **Function errors**:
    - Check function logs in Netlify dashboard
@@ -90,6 +91,7 @@ netlify deploy --prod
 3. **Build failures**:
    - Use `npm run build:netlify` instead of `npm run build`
    - Check Node.js version is set to 18 in `netlify.toml`
+   - Ensure dev dependencies are being installed
 
 ### 3. Railway
 

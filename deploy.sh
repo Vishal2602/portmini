@@ -72,6 +72,7 @@ case "${1:-local}" in
         if command -v netlify &> /dev/null; then
             # Use Netlify-specific build for deployment
             echo "🏗️  Building for Netlify..."
+            npm ci --include=dev
             npm run build:netlify
             netlify deploy --prod
         else
