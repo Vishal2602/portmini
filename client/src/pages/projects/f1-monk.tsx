@@ -188,11 +188,7 @@ export default function F1MonkProject() {
           {/* Results & Impact */}
           <section className="mb-16">
             <h2 className="text-2xl font-normal mb-6">Results & Impact</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2">200+</div>
-                <div className="text-sm portfolio-text-muted">Active Users</div>
-              </div>
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">95%</div>
                 <div className="text-sm portfolio-text-muted">Satisfaction Rating</div>
