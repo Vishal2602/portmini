@@ -237,30 +237,30 @@ export default function F1MonkProject() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6916 Medium.png" 
+                  src="/attached_assets/iPhone 15 Pro White Titanium.png" 
                   alt="F1 Monk Home Screen"
-                  className="w-full rounded-lg border border-gray-800"
+                  className="w-full max-w-xs mx-auto"
                 />
-                <h3 className="text-sm font-medium">Home Dashboard</h3>
-                <p className="text-xs portfolio-text-muted">Daily events summary with personalized greetings and quick access to timeline</p>
+                <h3 className="text-sm font-medium text-center">Home Dashboard</h3>
+                <p className="text-xs portfolio-text-muted text-center">Daily events summary with personalized greetings and quick access to timeline</p>
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6920 Medium.png" 
+                  src="/attached_assets/iPhone 15 Pro White Titanium-6.png" 
                   alt="F1 Monk Timeline View"
-                  className="w-full rounded-lg border border-gray-800"
+                  className="w-full max-w-xs mx-auto"
                 />
-                <h3 className="text-sm font-medium">Smart Timeline</h3>
-                <p className="text-xs portfolio-text-muted">Color-coded events with completion tracking and deadline management</p>
+                <h3 className="text-sm font-medium text-center">Smart Timeline</h3>
+                <p className="text-xs portfolio-text-muted text-center">Color-coded events with completion tracking and deadline management</p>
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6922 Medium.png" 
+                  src="/attached_assets/iPhone 15 Pro White Titanium-4.png" 
                   alt="F1 Monk Alerts System"
-                  className="w-full rounded-lg border border-gray-800"
+                  className="w-full max-w-xs mx-auto"
                 />
-                <h3 className="text-sm font-medium">Intelligent Alerts</h3>
-                <p className="text-xs portfolio-text-muted">Priority-based notification system with categorized alerts</p>
+                <h3 className="text-sm font-medium text-center">Intelligent Alerts</h3>
+                <p className="text-xs portfolio-text-muted text-center">Priority-based notification system with categorized alerts</p>
               </div>
             </div>
           </section>
@@ -298,21 +298,21 @@ export default function F1MonkProject() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6923 Medium.png" 
+                  src="/attached_assets/iPhone 15 Pro White Titanium-3.png" 
                   alt="Important Alerts View"
-                  className="w-full rounded-lg border border-gray-800"
+                  className="w-full max-w-xs mx-auto"
                 />
-                <h3 className="text-sm font-medium">Critical Notifications</h3>
-                <p className="text-xs portfolio-text-muted">High-priority alerts with immediate action items like OPT deadlines</p>
+                <h3 className="text-sm font-medium text-center">Critical Notifications</h3>
+                <p className="text-xs portfolio-text-muted text-center">High-priority alerts with immediate action items like OPT deadlines</p>
               </div>
               <div className="space-y-4">
                 <img 
-                  src="/attached_assets/IMG_6925 Medium.png" 
+                  src="/attached_assets/iPhone 15 Pro White Titanium-2.png" 
                   alt="Profile and Help Section"
-                  className="w-full rounded-lg border border-gray-800"
+                  className="w-full max-w-xs mx-auto"
                 />
-                <h3 className="text-sm font-medium">Profile & Resources</h3>
-                <p className="text-xs portfolio-text-muted">User profile management with quick access to visa resources and DSO contact</p>
+                <h3 className="text-sm font-medium text-center">Profile & Resources</h3>
+                <p className="text-xs portfolio-text-muted text-center">User profile management with quick access to visa resources and DSO contact</p>
               </div>
             </div>
           </section>
